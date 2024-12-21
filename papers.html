@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papers</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="{{ url_for('index') }}" class="logo">Evan Pochtar</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('index') }}#about">About</a></li>
+          <li><a href="{{ url_for('index') }}#skills">Skills</a></li>
+          <li><a href="{{ url_for('index') }}#projects">Projects</a></li>
+          <li><a href="{{ url_for('education') }}">Education</a></li>
+          <li><a href="{{ url_for('papers') }}" class="active">Papers</a></li>
+          <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="papers-page">
+    <h1>My Papers</h1>
+    <ul class="papers-list">
+      <li>
+        <a href="{{ url_for('static', filename='Analysis_Final_Paper.pdf') }}" target="_blank" class="paper-title">
+            Gene Network Analysis Reveals Functional Drivers of Age-Associated Disorders
+        </a>
+        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('static', filename='Nerf_Or_Nothin.pdf') }}" target="_blank" class="paper-title">
+          Calculating Depth Using a Neural Radiance Field
+        </a>
+        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('static', filename='ElevateVR.pdf') }}" target="_blank" class="paper-title">
+            ElevateVR Drone Simulator: An Affordable First Person View Drone Simulator
+        </a>
+        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('static', filename='PotableWater.pdf') }}" target="_blank" class="paper-title">
+          Comparing the Performance of Classical and Deep Learning Techniques on Classifying Water as Potable or Non-Potable
+        </a>
+        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+      </li>
+      <li>
+        <a href="{{ url_for('static', filename='ComparativeMazeStudy.pdf') }}" target="_blank" class="paper-title">
+            A Comparative Study of Maze Solving and Maze Creation Algorithms
+        </a>
+        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+      </li>
+    </ul>
+  </main>
+  <footer class="footer">
+    <p>© 2024 Evan Pochtar. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/styles.css" id="css">
+  <title>Evan Pochtar</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Evan Pochtar</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('index') }}#about">About</a></li>
+          <li><a href="{{ url_for('index') }}#skills">Skills</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="{{ url_for('papers') }}">Papers</a></li>
+          <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Evan Pochtar</h1>
+      <p>Explore my skills, projects, and academic papers below!</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© 2024 Evan Pochtar. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

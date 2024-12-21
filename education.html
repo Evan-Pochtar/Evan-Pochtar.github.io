@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="stylesheet" href="static/styles.css" id="css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="/" class="logo">Evan Pochtar</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('index') }}#about">About</a></li>
+          <li><a href="{{ url_for('index') }}#skills">Skills</a></li>
+          <li><a href="{{ url_for('index') }}#projects">Projects</a></li>
+          <li><a href="{{ url_for('education') }}" class="active">Education</a></li>
+          <li><a href="{{ url_for('papers') }}">Papers</a></li>
+          <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="education-page">
+    <section class="university-section">
+      <div class="university">
+        <h2>University of Minnesota - Twin Cities (2024-2025)</h2>
+        <h3>Master of Science in Computer Science</h3>
+        <p class="gpa">GPA: 4.0</p>
+        <ul>
+          <li>Focus on Machine Learning and Software Engineering</li>
+          <li>Planned Graduation in Spring 2025, one year early</li>
+        </ul>
+      </div>
+      <div class="university">
+        <h2>University of Minnesota - Twin Cities (2022-2024)</h2>
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p class="gpa">GPA: 3.89</p>
+        <ul>
+          <li>Started as PSEO from September 2020 - May 2022</li>
+          <li>Dean's List from 2020-2024, Presidential Academic Scholarship, Graduated with Distinction</li>
+          <li>Graduated two years early in Spring 2024</li>
+        </ul>
+      </div>
+    </section>
+    <section class="courses-section">
+      <h1>Complete List of Courses</h1>
+      <br/>
+      <h2>Graduate Courses</h2>
+      <div class="course-semester">
+        <h3>Spring 2025</h3>
+        <ul>
+          <li><strong>CSCI 5802:</strong> Introduction to Programming</li>
+          <li><strong>CSCI 5527:</strong> Discrete Mathematics</li>
+        </ul>
+      </div>
+      <div class="course-semester">
+        <h3>Fall 2024</h3>
+        <ul>
+          <li><strong>CS201:</strong> Data Structures</li>
+          <li><strong>CS202:</strong> Computer Architecture</li>
+          <li><strong>CS203:</strong> Operating Systems</li>
+        </ul>
+      </div>
+      <h2>Undergraduate Courses</h2>
+      <div class="course-semester">
+        <h3>Spring 2024</h3>
+        <ul>
+          <li><strong>CS401:</strong> Artificial Intelligence</li>
+          <li><strong>CS402:</strong> Machine Learning</li>
+          <li>
+            <strong>CS403:</strong> Natural Language Processing
+            <ul>
+              <li>Course project: Built a chatbot with BERT</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© 2024 Evan Pochtar. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

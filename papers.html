@@ -5,60 +5,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Papers</title>
   <link rel="stylesheet" href="static/styles.css">
+  <script src="mobile.js"></script> 
+  <!-- Created with https://realfavicongenerator.net/ -->
+  <link rel="icon" type="image/png" href="./static/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./static/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./static/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Evan Pochtar" />
+  <link rel="manifest" href="./static/favicon/site.webmanifest" />
 </head>
 <body>
   <header class="navbar">
     <div class="container">
-      <a href="{{ url_for('index') }}" class="logo">Evan Pochtar</a>
-      <nav>
+      <a href="./index.html" class="logo">
+        <span class="logo-text">Evan Pochtar</span>
+      </a>
+      <button class="mobile-menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-menu">
         <ul class="nav-links">
-          <li><a href="{{ url_for('index') }}#about">About</a></li>
-          <li><a href="{{ url_for('index') }}#skills">Skills</a></li>
-          <li><a href="{{ url_for('index') }}#projects">Projects</a></li>
-          <li><a href="{{ url_for('education') }}">Education</a></li>
-          <li><a href="{{ url_for('papers') }}" class="active">Papers</a></li>
-          <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./papers.html" class="active">Papers</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="papers-page">
-    <h1>My Papers</h1>
     <ul class="papers-list">
-      <li>
-        <a href="{{ url_for('static', filename='Analysis_Final_Paper.pdf') }}" target="_blank" class="paper-title">
-            Gene Network Analysis Reveals Functional Drivers of Age-Associated Disorders
+      <li id="Gene-Network">
+        <a href="static/papers/Analysis_Final_Paper.pdf" target="_blank" class="paper-title">
+          Gene Network Analysis Reveals Functional Drivers of Age-Associated Disorders
+          <img src="./static/img/link.svg" />
         </a>
-        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+        <p class="paper-description">May 2024, for CSCI 5461: Functional Genomics, Systems Biology, and Bioinformatics. In collaboration with Jacob Bridge, Aaron Castle, Annabelle Coler, Isabel Constable, and Kyla Hagen.</p>
+        <p>
+          <strong>ABSTRACT:</strong> Due to a progressive disruption of cellular homeostasis and communication, chronic disease risk increases dramatically with age. As a result,
+          according to the “Geroscience Hypothesis,” therapies that directly target drivers of aging could dramatically improve geriatric health outcomes.
+          Although many age-associated pathways have been described, there is significant disagreement regarding their relative contributions to distinct
+          tissue and disease phenotypes, complicating the drug development process. We hypothesize that drivers of aging can be inferred through gene
+          network analysis, as the upstream regulators responsible for coordinated patterns of age-dependent expression. By applying regression models to
+          RNA-seq data from over 3,000 human donors, encompassing myriad ages, tissues, and disease states, we isolate tissue-independent expression
+          changes associated with healthy aging. We then identify characteristic variations associated with 16 geriatric diseases, and construct an interactive
+          network of coordinately regulated gene sets. Critical nodes within the network display substantial functional agreement with known hallmarks
+          of aging, reinforcing the utility of our approach. Annotation of network outputs also allows for a granular assessment of putative drivers, with
+          the potential to streamline identification of robust therapeutic targets.
+        </p>
       </li>
-      <li>
-        <a href="{{ url_for('static', filename='Nerf_Or_Nothin.pdf') }}" target="_blank" class="paper-title">
+      <li id="NeRF">
+        <a href="static/papers/Nerf_Or_Nothin.pdf" target="_blank" class="paper-title">
           Calculating Depth Using a Neural Radiance Field
+          <img src="./static/img/link.svg" />
         </a>
-        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+        <p class="paper-description">December 2024, for CSCI 5561: Computer Vision. In collaboration with Evan Krainess, Hady Kotifani, and William Anderson.</p>
+        <p>
+          <strong>ABSTRACT:</strong> This project investigates the potential of Neural Radiance
+          Fields (NeRF) for depth estimation, focusing on their ability
+          to reconstruct 3D scenes and generate high-quality depth
+          maps from 2D image inputs. Depth estimation is essential
+          for various applications, including robotics, augmented and
+          virtual reality, autonomous vehicles, and computer vision.
+          NeRF offers a promising alternative to traditional depth es-
+          timation techniques, excelling in generating accurate recon-
+          structions of complex scenes. The focus of our work was
+          on improving the implementation and performance of NeRF-
+          based depth estimation rather than tackling challenges like
+          sparse imaging or transparent object detection, as explored
+          by advanced techniques such as SinNeRF and Dex-NeRF.
+          Instead, we concentrated on reimplementing and optimizing
+          the TinyNeRF algorithm in PyTorch, which allowed us to
+          enhance the computational efficiency and quality of depth
+          outputs.
+          Key achievements of this project include accelerating the
+          NeRF algorithm, creating custom functions to generate diverse
+          depth outputs, and improving the accuracy of these outputs.
+          Notably, we applied Gaussian blurring to the input data
+          to mitigate noise and refine depth calculation, resulting in
+          more precise and visually coherent depth maps. By iteratively
+          refining our approach, we observed significant improvements
+          in both computational speed and output quality. Our work
+          demonstrates how fundamental adjustments, such as enhanced
+          preprocessing and optimized implementation, can elevate the
+          performance of NeRF in depth estimation tasks. This study
+          underscores the practicality of NeRF for generating detailed
+          depth maps and sets the foundation for future applications in
+          3D scene reconstruction and beyond.
+          All code for the project can be found here: NeRF or Nothin
+          GitHub Repository.</p>
       </li>
-      <li>
-        <a href="{{ url_for('static', filename='ElevateVR.pdf') }}" target="_blank" class="paper-title">
-            ElevateVR Drone Simulator: An Affordable First Person View Drone Simulator
+      <li id="ElevateVR">
+        <a href="static/papers/ElevateVR.pdf" target="_blank" class="paper-title">
+          ElevateVR Drone Simulator: An Affordable First Person View Drone Simulator
+          <img src="./static/img/link.svg" />
         </a>
-        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+        <p class="paper-description">November 2024, for CSCI 5619: Virtual Reality and 3D Interaction. In collaboration with Aaron Castle.</p>
+        <p>
+          <strong>ABSTRACT:</strong> The ElevateVR Drone Simulator is a virtual reality project
+          designed to deliver an immersive and realistic FPV
+          (First-Person View) drone experience, offering accessible
+          alternatives to costly and high-risk real-world drone racing.
+          This simulator features three distinct modes: racing, time
+          trials, and freeplay, each designed to provide a unique and
+          engaging playstyle. Players can explore custom-designed
+          environments with interactive objects and obstacles.
+          Built using Unity and Unity's physics engine, the project
+          focuses on simulating realistic drone dynamics, including
+          gravity, drag, and wind resistance. The racing mode
+          features AI competitors, while the time trial mode focuses
+          on precision and speed, both through a racetrack with
+          custom layouts. The freeplay mode allows players to
+          explore maps at their leisure, offering opportunities to
+          practice skills or simply enjoy the environments. Custom
+          objects and maps, developed specifically for this simulator,
+          enhance immersion and provide creative challenges tailored
+          to each mode.
+          The development process prioritized responsive controls,
+          mechanics, and stable performance across all playstyles.
+          User testing ensured the realism of flight mechanics,
+          intuitive controls, and fun gameplay. Success is measured
+          by the simulator's ability to offer distinct, polished modes of
+          play, realistic FPV visuals, and reliable technical
+          functionality. ElevateVR demonstrates the potential for VR
+          technology to deliver an authentic FPV drone experience
+          while giving users accessible tools for practice and
+          entertainment without having to worry about a financial
+          burden.
+        </p>
       </li>
-      <li>
-        <a href="{{ url_for('static', filename='PotableWater.pdf') }}" target="_blank" class="paper-title">
+      <li id="Potable-Water">
+        <a href="static/papers/PotableWater.pdf" target="_blank" class="paper-title">
           Comparing the Performance of Classical and Deep Learning Techniques on Classifying Water as Potable or Non-Potable
+          <img src="./static/img/link.svg" />
         </a>
-        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+        <p class="paper-description">December 2024, for CSCI 5525: Machine Learning: Analysis and Methods. In collaboration with Ryan Roche and Evan Voogd.</p>
+        <p>
+          <strong>ABSTRACT:</strong> In this paper, we provide a comprehensive analysis on comparing the Performance
+          of Classical and Deep Learning Techniques on Classifying Water as Potable or
+          Non-Potable. We present our results of training sklearn's implementation of SVM
+          and Random Forest on our dataset, with both models performing slightly below
+          70% on a hold-out test set. We also provide the results of our attempts at modifying
+          the Random Forest architecture to better suit this dataset, comparing it to
+          SVM, Multilayer-Perceptron, and Transformer based approaches.
+        </p>
       </li>
-      <li>
-        <a href="{{ url_for('static', filename='ComparativeMazeStudy.pdf') }}" target="_blank" class="paper-title">
-            A Comparative Study of Maze Solving and Maze Creation Algorithms
+      <li id="Maze-Study">
+        <a href="static/papers/ComparativeMazeStudy.pdf" target="_blank" class="paper-title">
+          A Comparative Study of Maze Solving and Maze Creation Algorithms
+          <img src="./static/img/link.svg" />
         </a>
-        <p class="paper-description">An in-depth analysis of key findings in the research project.</p>
+        <p class="paper-description">May 2024, for CSCI 4511W: Introduction to Artificial Intelligence. In collaboration with Marie Milanowski.</p>
+        <p>
+          <strong>ABSTRACT:</strong> One of the most crucial problems within computing is navigating and solving diffi-
+          cult systems with search algorithms. These problems are presented in many different
+          ways, including mazes, images, data searching, and numerous others. Good pathing
+          relies on speed, efficiency, and ability to navigate complex situations and problems. In
+          this case, procedural two-dimensional (2D) maze generation and solution is one way
+          to test these algorithms. By analyzing different metrics, the strengths and weaknesses
+          of each search algorithm can be derived and the best one of certain sizes and types of
+          mazes can be determined.
+        </p>
       </li>
     </ul>
+    <div class="disclaimer">
+      <p>Disclaimer: All of these papers are for school projects and none of them are published.</p>
+    </div>
   </main>
   <footer class="footer">
-    <p>© 2024 Evan Pochtar. All Rights Reserved.</p>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com/Evan-Pochtar" target="_blank" class="footer-icon github-icon" aria-label="GitHub"></a>
+        <a href="https://www.linkedin.com/in/evan-pochtar/" target="_blank" class="footer-icon linkedin-icon" aria-label="LinkedIn"></a>
+        <a href="mailto:EvanPochtar@gmail.com" class="footer-text email-link">EvanPochtar@gmail.com</a>
+        <span class="footer-text location">Minneapolis, USA</span>
+      </div>
+      <p>© 2025 Evan Pochtar.<span class="rights"> All Rights Reserved.</span></p>
+    </div>
   </footer>
 </body>
 </html>

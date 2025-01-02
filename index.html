@@ -3,21 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="static/styles.css" id="css">
   <title>Evan Pochtar</title>
+  <link rel="stylesheet" href="./static/styles.css" id="css">
+  <script src="mobile.js"></script> 
+  <!-- Created with https://realfavicongenerator.net/ -->
+  <link rel="icon" type="image/png" href="./static/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./static/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./static/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Evan Pochtar" />
+  <link rel="manifest" href="./static/favicon/site.webmanifest" />
 </head>
 <body>
   <header class="navbar">
     <div class="container">
-      <a href="#" class="logo">Evan Pochtar</a>
-      <nav>
+      <a href="./index.html" class="logo">
+        <span class="logo-text">Evan Pochtar</span>
+      </a>
+      <button class="mobile-menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-menu">
         <ul class="nav-links">
-          <li><a href="{{ url_for('index') }}#about">About</a></li>
-          <li><a href="{{ url_for('index') }}#skills">Skills</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skills.html">Skills</a></li>
           <li><a href="./projects.html">Projects</a></li>
           <li><a href="./education.html">Education</a></li>
-          <li><a href="{{ url_for('papers') }}">Papers</a></li>
-          <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+          <li><a href="./papers.html">Papers</a></li>
         </ul>
       </nav>
     </div>
@@ -25,11 +40,106 @@
   <main>
     <section class="hero">
       <h1>Evan Pochtar</h1>
-      <p>Explore my skills, projects, and academic papers below!</p>
+      <div class="profile-picture">
+        <img src="./static/img/pfp.jpeg" alt="Evan Pochtar's Profile Picture">
+      </div>
+      <p>Software Developer - Machine Learning Engineer - Bioinformatician</p>
+      <a href="./static/papers/resume.pdf" target="_blank" class="resume-link">My Resume</a>
+    </section>
+
+    <section class="introduction">
+      <div class="container">
+        <h2>Welcome!</h2>
+        <p>
+          I'm Evan, a dedicated professional passionate about leveraging technology to solve real-world problems.
+          Dive into my experience, explore my portfolio, and learn more about the skills and education that
+          have shaped my journey.
+        </p>
+      </div>
+    </section>
+    <section class="featured">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="featured-item">
+          <h3>Project Spotlight: ElevateVR - A FPV Drone Simulator</h3>
+          <p>
+            A deep dive into creating a fun VR drone simulator that replicates the FPV drone experience.
+            <a href="./projects.html">Learn more</a>
+          </p>
+        </div>
+        <div class="featured-item">
+          <h3>Paper Spotlight: Gene Network Analysis of Age-Associated Disorders</h3>
+          <p>
+            Extensive experience building models for tasks such as classification, regression, and real-time analysis.
+            <a href="./Papers.html">Learn more</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="container">
+        <h2>Skills and Tools</h2>
+        <p>
+          Below are some of the key technologies and tools I work with:
+        </p>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+            <p>Python</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+            <p>C#</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+            <p>Typescript</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" />
+            <p>PyTorch</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
+            <p>Scikit-Learn</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+            <p>PostgreSQL</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg" />
+            <p>Svelte</p>
+          </div>
+        </div>
+        <p>
+          ... Or, see more <a href="./skills.html">Here</a>
+        </p>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Feel free to reach out to me via the following channels:
+        </p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:EvanPochtar@gmail.com">EvanPochtar@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/evan-pochtar/" target="_blank">https://www.linkedin.com/in/evan-pochtar/</a></li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <p>© 2024 Evan Pochtar. All Rights Reserved.</p>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com/Evan-Pochtar" target="_blank" class="footer-icon github-icon" aria-label="GitHub"></a>
+        <a href="https://www.linkedin.com/in/evan-pochtar/" target="_blank" class="footer-icon linkedin-icon" aria-label="LinkedIn"></a>
+        <a href="mailto:EvanPochtar@gmail.com" class="footer-text email-link">EvanPochtar@gmail.com</a>
+        <span class="footer-text location">Minneapolis, USA</span>
+      </div>
+      <p>© 2025 Evan Pochtar.<span class="rights"> All Rights Reserved.</span></p>
+    </div>
   </footer>
 </body>
 </html>

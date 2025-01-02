@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="static/styles.css" id="css">
+  <script src="mobile.js"></script> 
+  <!-- Created with https://realfavicongenerator.net/ -->
+  <link rel="icon" type="image/png" href="./static/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./static/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./static/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Evan Pochtar" />
+  <link rel="manifest" href="./static/favicon/site.webmanifest" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="./index.html" class="logo">
+        <span class="logo-text">Evan Pochtar</span>
+      </a>
+      <button class="mobile-menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./projects.html" class="active">Projects</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./papers.html">Papers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="projects-page">
+    <script src="search.js"></script> 
+    <div class="filter-container">
+      <div class="category-buttons"></div>
+      <div class="selected-tags"></div>
+    </div>
+    <div class="projects-list">
+      <div class="project-card">
+        <h2 class="project-title">Gene Network Analysis Reveals Functional Drivers of Age-Associated Disorders</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="R" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Scikit-Learn" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="MatplotLib" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="NetworkX" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/networkx/networkx-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="LaTeX" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>GitHub:</strong> 
+          <a href="https://github.com/Evan-Pochtar/Age-Associated-Gene-Network-Analysis" target="_blank">View Repository</a>
+          <br>
+          <strong>Paper:</strong> 
+          <a href="./static/papers/Analysis_Final_Paper.pdf" target="_blank">Read Paper</a>
+          <br>
+          <strong>Collaborators:</strong> Jacob Bridge, Aaron Castle, Annabelle Coler, Isabel Constable, and Kyla Hagen
+          <br>
+          <strong>Class:</strong> CSCI 5461 - Functional Genomics, Systems Biology, and Bioinformatics
+        </p>
+        <p class="project-description">
+          This project involved developing a computational pipeline to analyze age-associated gene expression changes and their relationship with various diseases using RNA-seq data. 
+          Raw data was normalized to control for sequencing depth, library size, and gene length, followed by variance stabilization and batch correction. 
+          Tissue-independent age effects were modeled using multiple linear regression, with curated gene sets from the Molecular Signatures Database employed to explore functional pathways. 
+          Differential expression analyses identified disease-specific alterations, while network analysis revealed co-regulatory interactions between gene sets. 
+          These preprocessing steps were done in R, while the actual visualizations and network creations were done in Python.
+          These interactive visualizations of gene networks featured dynamic filtering and annotation of hallmark aging processes, providing insights into the molecular drivers of aging and disease.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">Calculating Depth Using a Neural Radiance Field</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="PyTorch" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Tensorflow" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="MatplotLib" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="OpenCV" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="LaTeX" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>GitHub:</strong> 
+          <a href="https://github.com/Evan-Pochtar/NeRF_or_Nothin" target="_blank">View Repository</a>
+          <br>
+          <strong>Paper:</strong> 
+          <a href="./static/papers/Nerf_Or_Nothin.pdf" target="_blank">Read Paper</a>
+          <br>
+          <strong>Collaborators:</strong> Evan Krainess, Hady Kotifani, and William Anderson
+          <br>
+          <strong>Class:</strong> CSCI 5561 - Computer Vision
+        </p>
+        <p class="project-description">
+          In this project, I optimized Neural Radiance Field (NeRF) models to improve depth estimation and computational performance. 
+          Using datasets such as the TinyNeRF Lego excavator and custom Blender-generated scenes, I developed Python scripts to preprocess data, generate depth maps, and convert outputs into NeRF-compatible formats. 
+          Transitioning from TensorFlow to PyTorch and integrating various NeRF algorithms, including TinyNeRF and DexNeRF, led to significant speedups—achieving a 5.4x improvement over the original TinyNeRF. 
+          This especially was the hardest part of the project, as runs often took over two hours, and various forms of error handling had to be implemented to avoid terminating in the middle of runs.
+          Hyperparameter tuning was another critical part of the project, as I learned how easily neural networks can be helped or harmed with the wrong parameters.
+          Additionally, I compared NeRF-based depth estimation against other state-of-the-art methods like MiDaS and Stereo Vision, evaluating their performance through structural similarity, mean absolute error, and mean squared error metrics. 
+          The project highlighted NeRF's potential for depth estimation while providing insights into its limitations compared to other depth generating algorithms.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">ElevateVR Drone Simulator: An Affordable First Person View Drone Simulator</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Unity" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>Video:</strong> 
+          <a href="https://www.youtube.com/watch?v=3zYH7Qymuz8" target="_blank">View Demo</a>
+          <br>
+          <strong>Paper:</strong> 
+          <a href="./static/papers/ElevateVR.pdf" target="_blank">Read Paper</a>
+          <br>
+          <strong>Collaborator:</strong> Aaron Castle
+          <br>
+          <strong>Class:</strong> CSCI 5619 - Virtual Reality and 3D Interaction
+        </p>
+        <p class="project-description">
+          Collaborated with a team to design and implement ElevateVR Drone Simulator, an immersive first-person-view (FPV) drone simulation experience built in Unity. 
+          Leveraged Unity's physics engine to model realistic drone dynamics, incorporated cybersickness reduction techniques, and designed detailed virtual environments to enhance user engagement. 
+          The project addresses the lack of affordable, high-fidelity FPV simulators, providing a practical and accessible tool for drone enthusiasts and professionals. 
+          Delivered the project on schedule, showcasing strong teamwork, technical skills, and a commitment to quality user experiences.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">Comparing the Performance of Classical and Deep Learning Techniques on Classifying Water as Potable or Non-Potable</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Scikit-Learn" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="MatplotLib" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="LaTeX" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>Paper:</strong> 
+          <a href="./static/papers/PotableWater.pdf" target="_blank">Read Paper</a>
+          <br>
+          <strong>Collaborators:</strong> Evan Voogd and Ryan Roche
+          <br>
+          <strong>Class:</strong> CSCI 5525 - Machine Learning: Analysis and Methods
+        </p>
+        <p class="project-description">
+          This project focused on evaluating the efficacy of classical machine learning models, such as Random Forests and Support Vector Machines (SVMs), in comparison to neural networks for predicting water potability. 
+          By optimizing hyperparameters and analyzing model performance, we uncovered key limitations in the base Random Forest model, particularly its difficulty in classifying potable water. 
+          To address this, we proposed a novel cutoff-based modification, yielding slight accuracy improvements. 
+          Additionally, we explored SVM kernel variations, with the RBF kernel demonstrating superior performance, particularly when mitigating class imbalance using SMOTE. 
+          The study provided insights into model behavior with a low amount of data, and approaches to enhance predictive accuracy in imbalanced datasets.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">ImposterAI</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Flask" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="PostreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Azure Blob Storage" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>Collaborators:</strong> Grace Davies, Pan Hao, and Ya-Hui Yang
+          <br>
+          <strong>Class:</strong> CSCI 5117 - Developing the Interactive Web
+        </p>
+        <p class="project-description">
+          ImposterAI is an interactive social media platform designed to engage users in identifying whether text, images, or videos are AI-generated or real.
+          Users can post content and others vote on a scale from 1 (very sure it's AI) to 5 (very sure it's real), with results displayed in an aggregate graph after voting.
+          The platform encourages interaction through comments, sharing features, and personalized profiles where users can view their posting and voting statistics.
+          Key technical highlights include dynamic post loading with JavaScript's fetch and AbortController for a seamless user experience, a responsive design optimized for mobile and desktop, efficient image storage using Azure Blob Storage, and advanced search, sort, and filter options to enhance content discovery.
+          ImposterAI offers both a fun way to test AI detection skills and a practical tool for assessing the authenticity of digital content.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">Handiplan</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="EmberJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ember/ember-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Tailwind CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>Collaborators:</strong> Grace Davies, Pan Hao, and Ya-Hui Yang
+          <br>
+          <strong>Class:</strong> CSCI 5117 - Developing the Interactive Web
+        </p>
+        <p class="project-description">
+          Handiplan is an intuitive project tracker designed for woodworking, DIY, and hands-on enthusiasts to streamline project organization and recreation.
+          It allows users to create detailed project plans with steps, notes, and material lists, complete with cost tracking.
+          Users can capture and upload images directly via integrated camera functionality, ensuring every design and progress detail is recorded.
+          With a mobile-friendly interface and installable PWA support, Handiplan makes it easy to access project details anywhere, whether you're in the workshop or at the store.
+          The app's robust backend, built with Firebase, ensures seamless state management and secure data storage for all creative endeavors.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">Evan-Pochtar.github.io</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>GitHub:</strong> 
+          <a href="https://github.com/Evan-Pochtar/Evan-Pochtar.github.io" target="_blank">View Repository</a>
+        </p>
+        <p class="project-description">
+          This is the website you are currently viewing!
+          It was created for the purpose to show more of the projects and papers I have worked on, as well as expanding upon me as a person.
+          Some of the papers especially, I felt were really important to me and my learning, that couldn't be relayed on a few bullet points in a resume.
+          This website will be frequently maintained and updated with relevenat information.
+          This was created purely in HTML and CSS, without any form of framework for the frontend.
+          The website was designed to be both desktop and mobile friendly, fitting any screen size.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">A Comparative Study of Maze Solving and Maze Creation Algorithms</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="MatplotLib" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="LaTeX" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>Paper:</strong> 
+          <a href="./static/papers/ComparativeMazeStudy.pdf" target="_blank">Read Paper</a>
+          <br>
+          <strong>Collaborators:</strong> Marie Milanowski
+          <br>
+          <strong>Class:</strong> CSCI 4511W - Introduction to Artificial Intelligence
+        </p>
+        <p class="project-description">
+          Developed a Python application to evaluate and compare the performance of various search algorithms in solving procedurally generated mazes. 
+          The tool generates customizable mazes of varying dimensions and solves them using algorithms such as BFS, DFS, A*, Best-First Search, Simulated Annealing, and Genetic Algorithms. 
+          Performance metrics—runtime, nodes searched, and path length—were tracked and analyzed to rank the algorithms individually and overall. 
+          The system visualizes results through detailed graphs, providing insights into the efficiency and suitability of each algorithm for specific problem scales. 
+          Custom maze generation and algorithm implementations ensured flexibility and reliability in testing.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">StudyBuddy: Minnehack 2023</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="OpenAI API" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/768px-ChatGPT_logo.svg.png" />
+          </div>
+          <div class="skill-item">
+            <img title="SQLite" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>GitHub:</strong> 
+          <a href="https://github.com/Evan-Pochtar/Study-Buddy-Public" target="_blank">View Repository</a>
+          <br>
+          <strong>Collaborators:</strong> Liem Tran, Thomas Weber, and Anthony Brogni
+        </p>
+        <p class="project-description">
+          Study Buddy is a web platform created during the MinneHack2023 Hackathon (January 28-29, 2023) to bridge the gap between students and volunteer tutors in their community.
+          The platform connects learners with tutors who not only excel in specific subjects but also share similar interests, fostering a personalized learning experience.
+          Key features include a live chat system powered by WebSockets for real-time interaction and an OpenAI API integration for automated responses when a tutor is unavailable.
+          Built with Django for the backend and React for the frontend, Study Buddy utilizes a REST API for seamless communication and incorporates a sophisticated ranking algorithm to match students and tutors effectively.
+          The project highlights the importance of education as both a personal and civic good, emphasizing community participation to uplift learning opportunities.
+          Accomplishments include generating realistic test data, mastering new technologies like Django and modern React, and iteratively refining the platform's design.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">SPORTS: A Sports Scheduling System</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>Requirements Document:</strong> 
+          <a href="./static/papers/5801_SRS.pdf" target="_blank">Read Paper</a>
+          <br>
+          <strong>Design Document:</strong> 
+          <a href="./static/papers/5801_Design.pdf" target="_blank">Read Paper</a>
+          <br>
+          <strong>Collaborators:</strong> Wendy Meng, Timothy Tu, and William Wang
+          <br>
+          <strong>Class:</strong> CSCI 5801 - Software Engineering I
+        </p>
+        <p class="project-description">
+          The SPORTS system, built using Python and Pandas, is a robust platform designed to streamline the management of recreational sports leagues.
+          It enables efficient scheduling of games, venue bookings, and team registrations by processing CSV data files to generate accurate and conflict-free schedules.
+          The system supports multiple sports, venues, and league types while accommodating regional regulations, weather constraints, and concession policies.
+          With a focus on reliability, scalability, and ease of use, SPORTS provides secure access for league administrators, team managers, and other stakeholders, ensuring smooth operations and compliance with league-specific requirements.
+          This was created in an Agile-Scrum framework, however the assignments worked in more of a Waterfall approach.
+          The strength of this project was creating both detailed requirements and designs for the project at hand, and being able to recognize when those design decisions need to change based on the current needs of the stakeholders and program itself.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">Proddash</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Go" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Svelte" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>Collaborators:</strong> Daniel Ginzburg
+        </p>
+        <p class="project-description">
+          ProdDash is a productivity dashboard designed to transform the browser's new tab page into a centralized area for managing daily tasks and streamlining everyday activities.
+          The platform currently features a daily to-do list, a search bar, date display, and encrypted user authentication, with a clean and functional interface.
+          The project has expanded to include a variety of features such as customizable quick links, task scheduling options that adapt to user preferences, and integrations with popular tools like Google and Outlook calendars.
+          Future developments include a Chrome extension for seamless replacement of the new tab page, and a centeralized server to host the webpage itself.
+          ProdDash also aims to become a productivity tool by incorporating features like weather updates, news summaries powered by AI, calorie and workout tracking, and notecards for quick reminders.
+          This project seeks to create a highly customizable experience where users can adjust settings, enable or disable modules, and personalize the interface with options like dark mode, background images, and tailored quick links.
+          This website is currently not public as it is actively being worked on, this is also the reason the GitHub is not public, although this will be released as open source software afterwards.
+        </p>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">SimpleML</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="MatplotLib" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>GitHub:</strong> 
+          <a href="https://github.com/Evan-Pochtar/Simple_ML" target="_blank">View Repository</a>
+          <br>
+          <strong>Class:</strong> CSCI 5521 - Machine Learning Fundamentals
+        </p>
+        <p class="project-description">
+          These files are a compilation of classical machine learning algorithms created to work for any kind of integer inputs.
+          This was created as a way of conceptualizing and putting to life the mathmatical formulas in class, so it would be easier to understand and work with.
+          Although the functions are relatively simple and lacks a lot of the speedups other modules bring, it still runs relatively fast as the code does not have much bloat.
+          In the future, speedups with systems like CUDA, PyTorch, Tensorflow, or Scikit-Learn could help with the computation even more.
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com/Evan-Pochtar" target="_blank" class="footer-icon github-icon" aria-label="GitHub"></a>
+        <a href="https://www.linkedin.com/in/evan-pochtar/" target="_blank" class="footer-icon linkedin-icon" aria-label="LinkedIn"></a>
+        <a href="mailto:EvanPochtar@gmail.com" class="footer-text email-link">EvanPochtar@gmail.com</a>
+        <span class="footer-text location">Minneapolis, USA</span>
+      </div>
+      <p>© 2025 Evan Pochtar.<span class="rights"> All Rights Reserved.</span></p>
+    </div>
+  </footer>
+</body>

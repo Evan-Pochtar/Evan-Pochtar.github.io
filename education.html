@@ -5,82 +5,224 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Education</title>
   <link rel="stylesheet" href="static/styles.css" id="css">
+  <script src="mobile.js"></script> 
+  <!-- Created with https://realfavicongenerator.net/ -->
+  <link rel="icon" type="image/png" href="./static/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./static/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./static/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Evan Pochtar" />
+  <link rel="manifest" href="./static/favicon/site.webmanifest" />
 </head>
 <body>
   <header class="navbar">
     <div class="container">
-      <a href="/" class="logo">Evan Pochtar</a>
-      <nav>
+      <a href="./index.html" class="logo">
+        <span class="logo-text">Evan Pochtar</span>
+      </a>
+      <button class="mobile-menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-menu">
         <ul class="nav-links">
-          <li><a href="{{ url_for('index') }}#about">About</a></li>
-          <li><a href="{{ url_for('index') }}#skills">Skills</a></li>
-          <li><a href="{{ url_for('index') }}#projects">Projects</a></li>
-          <li><a href="{{ url_for('education') }}" class="active">Education</a></li>
-          <li><a href="{{ url_for('papers') }}">Papers</a></li>
-          <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./education.html" class="active">Education</a></li>
+          <li><a href="./papers.html">Papers</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="education-page">
     <section class="university-section">
-      <div class="university">
-        <h2>University of Minnesota - Twin Cities (2024-2025)</h2>
-        <h3>Master of Science in Computer Science</h3>
-        <p class="gpa">GPA: 4.0</p>
-        <ul>
-          <li>Focus on Machine Learning and Software Engineering</li>
-          <li>Planned Graduation in Spring 2025, one year early</li>
-        </ul>
+      <div class="university-content">
+        <div class="university">
+          <h2>University of Minnesota - Twin Cities (2024-2025)</h2>
+          <h3>College of Science and Engineering - Master of Science in Computer Science</h3>
+          <p class="gpa">GPA: 4.0</p>
+          <ul>
+            <li>Focus on Machine Learning and Software Engineering</li>
+            <li>Planned Graduation in Spring 2025, one year early</li>
+          </ul>
+        </div>
+        <div class="university">
+          <h2>University of Minnesota - Twin Cities (2022-2024)</h2>
+          <h3>College of Science and Engineering - Bachelor of Science in Computer Science</h3>
+          <p class="gpa">GPA: 3.89</p>
+          <ul>
+            <li>Started as PSEO from September 2020 - May 2022</li>
+            <li>Dean's List from 2020-2024, Presidential Academic Scholarship, Graduated with Distinction</li>
+            <li>Graduated two years early in Spring 2024</li>
+          </ul>
+        </div>
+        <div class="university">
+          <h2>Eastview High School - Apple Valley Minnesota (2018-2022)</h2>
+          <p class="gpa">GPA: 3.83</p>
+        </div>
       </div>
-      <div class="university">
-        <h2>University of Minnesota - Twin Cities (2022-2024)</h2>
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p class="gpa">GPA: 3.89</p>
-        <ul>
-          <li>Started as PSEO from September 2020 - May 2022</li>
-          <li>Dean's List from 2020-2024, Presidential Academic Scholarship, Graduated with Distinction</li>
-          <li>Graduated two years early in Spring 2024</li>
-        </ul>
+      <div class="university-logo">
+        <img src="./static/img/university-of-minnesota-seeklogo.png" alt="University Logo">
       </div>
     </section>
     <section class="courses-section">
       <h1>Complete List of Courses</h1>
       <br/>
-      <h2>Graduate Courses</h2>
-      <div class="course-semester">
-        <h3>Spring 2025</h3>
-        <ul>
-          <li><strong>CSCI 5802:</strong> Introduction to Programming</li>
-          <li><strong>CSCI 5527:</strong> Discrete Mathematics</li>
-        </ul>
-      </div>
-      <div class="course-semester">
-        <h3>Fall 2024</h3>
-        <ul>
-          <li><strong>CS201:</strong> Data Structures</li>
-          <li><strong>CS202:</strong> Computer Architecture</li>
-          <li><strong>CS203:</strong> Operating Systems</li>
-        </ul>
-      </div>
-      <h2>Undergraduate Courses</h2>
-      <div class="course-semester">
-        <h3>Spring 2024</h3>
-        <ul>
-          <li><strong>CS401:</strong> Artificial Intelligence</li>
-          <li><strong>CS402:</strong> Machine Learning</li>
-          <li>
-            <strong>CS403:</strong> Natural Language Processing
+      <div class="course-toggle">
+        <div class="toggle-header" data-toggle="graduate">
+          <span class="arrow">&#9654;</span> <h2>Graduate Courses</h2>
+        </div>
+        <div class="toggle-content" id="graduate">
+          <div class="course-semester">
+            <h3>Spring 2025</h3>
             <ul>
-              <li>Course project: Built a chatbot with BERT</li>
+              <li><strong>CSCI 5512:</strong> Artificial Intelligence II</li>
+              <li><strong>CSCI 5527:</strong> Deep Learning: Models, Computation, and Applications</li>
+              <li><strong>CSCI 5541:</strong> Natural Language Processing</li>
+              <li><strong>CSCI 5551:</strong> Introduction to Intelligent Robotic Systems</li>
+              <li><strong>CSCI 5802:</strong> Software Engineering II</li>
             </ul>
-          </li>
-        </ul>
+          </div>
+          <div class="course-semester">
+            <h3>Fall 2024</h3>
+            <ul>
+              <li><strong>CSCI 5117:</strong> Developing the Interactive Web</li>
+              <li><strong>CSCI 5525:</strong> Machine Learning: Analysis and Methods</li>
+              <li><strong>CSCI 5561:</strong> Computer Vision</li>
+              <li><strong>CSCI 5619:</strong> Virtual Reality and 3D Interaction</li>
+              <li><strong>CSCI 5801:</strong> Software Engineering I</li>
+              <li><strong>CSCI 8970:</strong> Computer Science Colloquium</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="course-toggle">
+        <div class="toggle-header" data-toggle="undergraduate">
+          <span class="arrow">&#9654;</span> <h2>Undergraduate Courses</h2>
+        </div>
+        <div class="toggle-content" id="undergraduate">
+          <div class="course-semester">
+            <h3>Spring 2024</h3>
+            <ul>
+              <li><strong>CSCI 4061:</strong> Introduction to Operating Systems</li>
+              <li><strong>CSCI 4511W:</strong> Introduction to Artificial Intelligence</li>
+              <li><strong>CSCI 5115:</strong> User Interface Design, Prototyping, and Evaluation</li>
+              <li><strong>CSCI 5461:</strong> Functional Genomics, Systems Biology, and Bioinformatics</li>
+              <li><strong>GEOG 1502:</strong> Mapping Our World</li>
+              <li><strong>MATH 4242:</strong> Applied Linear Algebra</li>
+              <!-- <li>
+                <strong>CS403:</strong> Natural Language Processing
+                <ul>
+                  <li>Course project: Built a chatbot with BERT</li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+          <div class="course-semester">
+            <h3>Fall 2023</h3>
+            <ul>
+              <li><strong>CSCI 5715:</strong> From GPS, Google Maps, and Uber to Spatial Data Science</li>
+              <li><strong>CSCI 5521:</strong> Machine Learning Fundamentals</li>
+              <li><strong>CSCI 4131:</strong> Internet Programming</li>
+              <li><strong>CSCI 4041:</strong> Algorithms and Data Structures</li>
+              <li><strong>CSCI 3081W:</strong> Program Design and Development</li>
+            </ul>
+          </div>
+          <div class="course-semester">
+            <h3>Spring 2023</h3>
+            <ul>
+              <li><strong>CSCI 2021:</strong> Machine Architecture and Organization</li>
+              <li><strong>CSCI 2033:</strong> Elementary Computational Linear Algebra</li>
+              <li><strong>CSCI 2041:</strong> Advanced Programming Principles</li>
+              <li><strong>STAT 3021:</strong> Introduction to Probability and Statistics</li>
+            </ul>
+          </div>
+          <div class="course-semester">
+            <h3>Fall 2022</h3>
+            <ul>
+              <li><strong>JOUR 3715:</strong> Media and Popular Culture</li>
+              <li><strong>GCD 3022:</strong> Genetics</li>
+              <li><strong>CSE 1001:</strong> First Year Experience</li>
+              <li><strong>CSCI 2011:</strong> Discrete Structures of Computer Science</li>
+              <li><strong>CSCI 1933:</strong> Introduction to Algorithms and Data Structures</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="course-toggle">
+        <div class="toggle-header" data-toggle="PSEO">
+          <span class="arrow">&#9654;</span> <h2>PSEO Courses</h2>
+        </div>
+        <div class="toggle-content" id="PSEO">
+          <div class="course-semester">
+            <h3>Spring 2022</h3>
+            <ul>
+              <li><strong>WRIT 1301:</strong> University Writing</li>
+              <li><strong>PHYS 1301W:</strong> Introductory Physics for Science and Engineering I</li>
+              <li><strong>MATH 1272:</strong> Calculus II</li>
+              <li><strong>CSCI 1133:</strong> Introduction to Computing and Programming Concepts</li>
+            </ul>
+          </div>
+          <div class="course-semester">
+            <h3>Fall 2021</h3>
+            <ul>
+              <li><strong>MATH 1271:</strong> Calculus I</li>
+              <li><strong>ENGL 1701:</strong> Modern Fiction</li>
+              <li><strong>ECON 1101:</strong> Principles of Microeconomics</li>
+              <li><strong>BIOL 1001:</strong> Introductory Biology: Evolutionary and Ecological Perspectives</li>
+            </ul>
+          </div>
+          <div class="course-semester">
+            <h3>Spring 2021</h3>
+            <ul>
+              <li><strong>MATH 1151:</strong> Precalculus II</li>
+              <li><strong>HIST 1011W:</strong> Civilization and the Environment: World History to 1500</li>
+              <li><strong>ENGL 1001W:</strong> Introduction to Literature: Poetry, Drama, Narrative</li>
+              <li><strong>CHEM 1015:</strong> Introductory Chemistry</li>
+            </ul>
+          </div>
+          <div class="course-semester">
+            <h3>Fall 2020</h3>
+            <ul>
+              <li><strong>PUBH 1005:</strong> Sleep, Eat, and Exercise</li>
+              <li><strong>MATH 1051:</strong> Precalculus I</li>
+              <li><strong>HIST 1809:</strong> The Presidency: Power, Politics, and Policy in the United States</li>
+              <li><strong>ENGW 1102:</strong> Intro to Fiction Writing</li>
+              <li><strong>APEC 1201:</strong> Applications of Excel in Economics and Management</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <p>© 2024 Evan Pochtar. All Rights Reserved.</p>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com/Evan-Pochtar" target="_blank" class="footer-icon github-icon" aria-label="GitHub"></a>
+        <a href="https://www.linkedin.com/in/evan-pochtar/" target="_blank" class="footer-icon linkedin-icon" aria-label="LinkedIn"></a>
+        <a href="mailto:EvanPochtar@gmail.com" class="footer-text email-link">EvanPochtar@gmail.com</a>
+        <span class="footer-text location">Minneapolis, USA</span>
+      </div>
+      <p>© 2025 Evan Pochtar.<span class="rights"> All Rights Reserved.</span></p>
+    </div>
   </footer>
+  <script>
+    document.querySelectorAll('.toggle-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const content = document.getElementById(header.dataset.toggle);
+        const isActive = content.classList.contains('active');
+        if (isActive) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+        header.classList.toggle('active');
+        content.classList.toggle('active');
+      });
+    });  
+  </script>
 </body>
 </html>

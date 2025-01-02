@@ -1,5 +1,5 @@
 const categories = {
-  backend: ['Python', 'R', 'Go', 'Typescript', 'Javascript'],
+  backend: ['Python', 'Typescript', 'Javascript', 'Go', 'C#', 'R'],
   frontend: ['Svelte', 'Flask', 'EmberJS', 'HTML5', 'Tailwind CSS', 'React'],
   packages: ['Scikit-Learn', 'Pandas', 'MatplotLib', 'NetworkX', 'PyTorch', 'Tensorflow', 'OpenCV', 'OpenAI API'],
   database: ['Azure Blob Storage', 'Firebase', 'PostgreSQL', 'SQLite'],

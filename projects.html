@@ -167,6 +167,49 @@
         </p>
       </div>
       <div class="project-card">
+        <h2 class="project-title">Optimizing Small Language Models for Cryptographic Applications</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="PyTorch" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="Tensorflow" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="MatplotLib" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="LaTeX" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>GitHub:</strong> 
+          <a href="https://github.com/Evan-Pochtar/SmaLLM-Cryptography" target="_blank">View Repository</a>
+          <br>
+          <strong>Paper:</strong> 
+          <a href="./static/papers/CSCI_5541_Final_Report___The_Tokenizers.pdf" target="_blank">Read Paper</a>
+          <br>
+          <strong>Collaborators:</strong> Anthony Brogni, Ajitesh Parthasarathy, and Tanmay Patwardhan
+          <br>
+          <strong>Class:</strong> CSCI 5541 - Natural Language Processing
+        </p>
+        <p class="project-description">
+          We present a targeted investigation into the ability of fine-tuned small language models (SLMs) to break mono-alphabetic substitution ciphers.
+          Using Qwen2.5-0.5B and Phi-4-mini-instruct as our base models, we generated a bespoke training corpus by programmatically encrypt000 “Human vs AI” dataset text samples with random mono-alphabetic mappings.
+          We then applied Group-Relative Policy Optimization (GRPO) fine-tuning and evaluated a novel test-time scaling mechanism designedto scale performance during inference. 
+          Our experiments measured accuracy using RapidFuzz similarity (a fuzzy similarity metric), comparing GRPO alone as well as GRPO combined with test-time scaling against initial baselines. 
+          We found that GRPO fine-tuning yielded improvements in the decryption accuracy of SLMs on this task. 
+          The test-time scaling mechanism was evaluated for its ability to reduce ambiguous substitutions, and its effect on overall performance is discussed. 
+          Our results quantify the effectiveness and highlight the limitations of these methods for lightweight cryptanalysis using SLMs, illuminating remaining failure modes and informing approaches for future research.
+        </p>
+      </div>
+      <div class="project-card">
         <h2 class="project-title">Comparing the Performance of Classical and Deep Learning Techniques on Classifying Water as Potable or Non-Potable</h2>
         <div class="skills-list">
           <div class="skill-item">

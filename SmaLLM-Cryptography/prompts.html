@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang=" en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NLP Class Project | Fall 2024 CSCI 5541 | University of Minnesota</title>
+
+  <link rel="stylesheet" href="./files/bulma.min.css" />
+
+  <link rel="stylesheet" href="./files/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link href="./files/css2" rel="stylesheet">
+  <link href="./files/css" rel="stylesheet">
+
+
+  <base href="." target="_blank"></head>
+
+
+<body>
+    <div>
+        <div class="wrapper">
+          <h1 style="font-family: &#39;Lato&#39;, sans-serif;">Prompts Used to Test Mono-alphabetic Ciphers in LLMs</h1>
+        </br>
+          <div class="authors-wrapper">
+            <div class="publication-links">
+              <!-- Github link -->
+              <span class="link-block">
+                <a
+                  href="./index.html"
+                  target="_self"
+                  class="button is-normal is-rounded is-dark is-outlined"
+                >
+                <span>Back to Main Page</span>
+                </a>
+              </span>            
+            </div>
+          </div>
+        </div>
+    </br>
+        <div class="wrapper">
+            <hr>
+            <h1>Undirected Prompts</h1>
+            <hr>
+            <h2 id="abstract">Prompt 1</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. Do not return any of the original cipher.
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                D HOQF TCEN DFO, CQ D FDHDJB ADK, ADK DXDB... CT CU D YDKZ TCEN AOK TIN KNSNHHCOQ. DHTIOWFI TIN YNDTI UTDK IDU SNNQ YNUTKOBNY, CERNKCDH TKOORU IDGN YKCGNQ TIN KNSNH AOKMNU AKOE TINCK ICYYNQ SDUN DQY RWKUWNY TINE DMKOUU TIN FDHDJB. NGDYCQF TIN YKNDYNY CERNKCDH UTDKAHNNT, D FKOWR OA AKNNYOE ACFITNKU HNY SB HWZN UZBXDHZNK IDU NUTDSHCUINY D QNX UNMKNT SDUN OQ TIN KNEOTN CMN XOKHY OA IOTI. TIN NGCH HOKY YDKTI GDYNK, OSUNUUNY XCTI ACQYCQF BOWQF UZBXDHZNK, IDU YCURDTMINY TIOWUDQYU OA KNEOTN RKOSNU CQTO TIN ADK KNDMINU OA URDMN…
+            </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+            <hr>
+            <h2 id="abstract">Prompt 2 (Same Plaintext Message as Prompt 1, Different Cipher)</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. Do not return any of the original cipher.
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                J YQHV SXAR JVQ, XH J VJYJEL FJW, FJW JGJL... XS XB J DJWC SXAR FQW SIR WRURYYXQH. JYSIQZVI SIR DRJSI BSJW IJB URRH DRBSWQLRD, XAORWXJY SWQQOB IJKR DWXKRH SIR WRURY FQWMRB FWQA SIRXW IXDDRH UJBR JHD OZWBZRD SIRA JMWQBB SIR VJYJEL. RKJDXHV SIR DWRJDRD XAORWXJY BSJWFYRRS, J VWQZO QF FWRRDQA FXVISRWB YRD UL YZCR BCLGJYCRW IJB RBSJUYXBIRD J HRG BRMWRS UJBR QH SIR WRAQSR XMR GQWYD QF IQSI. SIR RKXY YQWD DJWSI KJDRW, QUBRBBRD GXSI FXHDXHV LQZHV BCLGJYCRW, IJB DXBOJSMIRD SIQZBJHDB QF WRAQSR OWQURB XHSQ SIR FJW WRJMIRB QF BOJMR…
+            </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+            <hr>
+            <h2 id="abstract">Prompt 3</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. Do not return any of the original cipher.
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                Z HGAB BMXB PMXB Z MXN CGGE KBXENZET OE MXN QOAAXYKGN XEN BMXB Z MXN EOBMZET AGHB VENGR UI HGGB. PMXB Z MXN AZDGN OE EO AOETGR GJZKBGN, XEN BMGRG PXK EOBMZET AGHB.
+                UI AZHG QXUG BO X KBXENKBZAA. Z QOVAN CRGXBMG, GXB, NRZES, XEN KAGGY, XEN Z QOVAN EOB MGAY NOZET BMGKG BMZETK; CVB BMGRG PXK EO AZHG, HOR BMGRG PGRG EO PZKMGK BMG HVAHZAAUGEB OH PMZQM Z QOVAN QOEKZNGR RGXKOEXCAG. ZH Z NGKZRGN XEIBMZET, Z SEGP ZE XNDXEQG BMXB PMGBMGR Z KXBZKHZGN UI NGKZRG OR EOB, EOBMZET POVAN QOUG OH ZB. MXN X HXZRI QOUG XEN OHHGRGN BO HVAHZA UI NGKZRGK Z KMOVAN EOB MXDG SEOP PMXB BO XKS. ZH ZE UOUGEBK OH ZEBOJZQXBZOE Z HGAB KOUGBMZET PMZQM, BMOVTM EOB X PZKM, PXK X MXCZB AGHB CI HORUGR PZKMGK, ZE KOCGR UOUGEBK Z SEGP BMZK BO CG X NGAVKZOE XEN BMXB BMGRG PXK RGXAAI EOBMZET BO PZKM HOR. Z QOVAN EOB GDGE PZKM BO SEOP BMG BRVBM, HOR Z TVGKKGN OH PMXB ZB QOEKZKBGN. BMG BRVBM PXK BMXB AZHG ZK UGXEZETAGKK. Z MXN XK ZB PGRG AZDGN, AZDGN, XEN PXASGN, PXASGN, BZAA Z MXN QOUG BO X YRGQZYZQG XEN KXP QAGXRAI BMXB BMGRG PXK EOBMZET XMGXN OH UG CVB NGKBRVQBZOE. ZB PXK ZUYOKKZCAG BO KBOY, ZUYOKKZCAG BO TO CXQS, XEN ZUYOKKZCAG BO QAOKG UI GIGK OR XDOZN KGGZET BMXB BMGRG PXK EOBMZET XMGXN CVB KVHHGRZET XEN RGXA NGXBM--QOUYAGBG XEEZMZAXBZOE.
+            </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+            <hr>
+            <h2 id="abstract">Prompt 4</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. Do not return any of the original cipher.
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                L GN DAQCLQDEX IOGI OJNGQ ZLTE LF TLZZEX HLIO NGQY RJWE, OGRRY, FEWEQE EUGNRZEF AT LQFLQDEWLIY, IWJZY FRZEQXLX AT IOELW MLQX-AT REARZE XEDELCLQP AQE GQAIOEW HLIOAJI (FIWGQPEZY EQAJPO) GQY HAJQXF KELQP LQTZLDIEX, AT REARZE HOA FEEN JQGHGWE ECEQ IOGI IOEY GWE XEDELCLQP AQE GQAIOEW.
+            </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+            <hr>
+            <h2 id="abstract">Prompt 5</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. Do not return any of the original cipher.
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                RQ AMJQY BT JADQ A SJAHH, QKKMWMQNB HANOCAOQ JTYQH BGAB WAN XPQAD SMJFHQ WTYQY JQSSAOQS RGQPQ QAWG HQBBQP MS PQFHAWQY XL ANTBGQP HQBBQP. BGQ FPTXHQJ RQ APQ BPLMNO BT STHZQ MS BT CNYQPSBANY WCPPQNB HHJ'S YMKKMWCHBMQS RMBG WPLFBTOPAFGMW FPTXHQJS MN OQNQPAH, ANY BT SQQ MK WAPQKCH BPAMNMNO WAN MJFPTZQ BGQ AWWCPAWL TK BGQSQ JTYQHS. BT STHZQ BGMS OTAH, RQ RMHH BQSB A WTJFAWB XASQ HHJ JTYQH RMBG SBABQ-TK-BGQ-APB AHOTPMBGJS ANY KMOCPQ TCB MK MB WAN CNYQPSBANY ANY STHZQ BGQSQ FCVVHQS. MK MB MS NTB FTSSMXHQ, RQ FHAN BT SGTR SQZQPAH PQASTNS RGL BGMS MS BGQ WASQ, ANY CNYQPSBANY BGQ KCNYQJQNBAH HMJMBABMTNS TK HHJ'S MN BGMS APQA.
+            </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+            <hr>
+            <h1>Directed Prompts</h1>
+            <hr>
+            <h2 id="abstract">Prompt 6</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+            </p>
+            <p>
+                When given an encrypted message, follow these steps: <br/>
+                1. Analyze letter frequencies in the ciphertext (Start with trying to find the letter A, E or I) <br/>
+                2. Identify common patterns and letter combinations <br/>
+                3. Map cipher letters to plaintext letters <br/>
+                4. Refine your mapping until the message is coherent <br/>
+                5. Return only the decrypted text with no additional commentary
+            </p>
+            <p>
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. There are no other ciphers being used, only this mono-alphabetic substitution cipher.
+            </p>
+            <p>
+                Provide only the decrypted English plaintext as your response without any explanations or additional text. Do not return any of the original cipher. Make sure your final output is in coherent English.
+            </p>
+            <p>       
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                D HOQF TCEN DFO, CQ D FDHDJB ADK, ADK DXDB... CT CU D YDKZ TCEN AOK TIN KNSNHHCOQ. DHTIOWFI TIN YNDTI UTDK IDU SNNQ YNUTKOBNY, CERNKCDH TKOORU IDGN YKCGNQ TIN KNSNH AOKMNU AKOE TINCK ICYYNQ SDUN DQY RWKUWNY TINE DMKOUU TIN FDHDJB. NGDYCQF TIN YKNDYNY CERNKCDH UTDKAHNNT, D FKOWR OA AKNNYOE ACFITNKU HNY SB HWZN UZBXDHZNK IDU NUTDSHCUINY D QNX UNMKNT SDUN OQ TIN KNEOTN CMN XOKHY OA IOTI. TIN NGCH HOKY YDKTI GDYNK, OSUNUUNY XCTI ACQYCQF BOWQF UZBXDHZNK, IDU YCURDTMINY TIOWUDQYU OA KNEOTN RKOSNU CQTO TIN ADK KNDMINU OA URDMN…
+            </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+            <hr>
+            <h2 id="abstract">Prompt 7 (Same Plaintext Message as Prompt 6, Different Cipher)</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+            </p>
+            <p>
+                When given an encrypted message, follow these steps: <br/>
+                1. Analyze letter frequencies in the ciphertext (Start with trying to find the letter A, E or I) <br/>
+                2. Identify common patterns and letter combinations <br/>
+                3. Map cipher letters to plaintext letters <br/>
+                4. Refine your mapping until the message is coherent <br/>
+                5. Return only the decrypted text with no additional commentary
+            </p>
+            <p>
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. There are no other ciphers being used, only this mono-alphabetic substitution cipher.
+            </p>
+            <p>
+                Provide only the decrypted English plaintext as your response without any explanations or additional text. Do not return any of the original cipher. Make sure your final output is in coherent English.
+            </p>
+            <p>       
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                J YQHV SXAR JVQ, XH J VJYJEL FJW, FJW JGJL... XS XB J DJWC SXAR FQW SIR WRURYYXQH. JYSIQZVI SIR DRJSI BSJW IJB URRH DRBSWQLRD, XAORWXJY SWQQOB IJKR DWXKRH SIR WRURY FQWMRB FWQA SIRXW IXDDRH UJBR JHD OZWBZRD SIRA JMWQBB SIR VJYJEL. RKJDXHV SIR DWRJDRD XAORWXJY BSJWFYRRS, J VWQZO QF FWRRDQA FXVISRWB YRD UL YZCR BCLGJYCRW IJB RBSJUYXBIRD J HRG BRMWRS UJBR QH SIR WRAQSR XMR GQWYD QF IQSI. SIR RKXY YQWD DJWSI KJDRW, QUBRBBRD GXSI FXHDXHV LQZHV BCLGJYCRW, IJB DXBOJSMIRD SIQZBJHDB QF WRAQSR OWQURB XHSQ SIR FJW WRJMIRB QF BOJMR…             </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+            <hr>
+            <h2 id="abstract">Prompt 8</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+            </p>
+            <p>
+                When given an encrypted message, follow these steps: <br/>
+                1. Analyze letter frequencies in the ciphertext (Start with trying to find the letter A, E or I) <br/>
+                2. Identify common patterns and letter combinations <br/>
+                3. Map cipher letters to plaintext letters <br/>
+                4. Refine your mapping until the message is coherent <br/>
+                5. Return only the decrypted text with no additional commentary
+            </p>
+            <p>
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. There are no other ciphers being used, only this mono-alphabetic substitution cipher.
+            </p>
+            <p>
+                Provide only the decrypted English plaintext as your response without any explanations or additional text. Do not return any of the original cipher. Make sure your final output is in coherent English.
+            </p>
+            <p>       
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                Z HGAB BMXB PMXB Z MXN CGGE KBXENZET OE MXN QOAAXYKGN XEN BMXB Z MXN EOBMZET AGHB VENGR UI HGGB. PMXB Z MXN AZDGN OE EO AOETGR GJZKBGN, XEN BMGRG PXK EOBMZET AGHB. UI AZHG QXUG BO X KBXENKBZAA. Z QOVAN CRGXBMG, GXB, NRZES, XEN KAGGY, XEN Z QOVAN EOB MGAY NOZET BMGKG BMZETK; CVB BMGRG PXK EO AZHG, HOR BMGRG PGRG EO PZKMGK BMG HVAHZAAUGEB OH PMZQM Z QOVAN QOEKZNGR RGXKOEXCAG. ZH Z NGKZRGN XEIBMZET, Z SEGP ZE XNDXEQG BMXB PMGBMGR Z KXBZKHZGN UI NGKZRG OR EOB, EOBMZET POVAN QOUG OH ZB. MXN X HXZRI QOUG XEN OHHGRGN BO HVAHZA UI NGKZRGK Z KMOVAN EOB MXDG SEOP PMXB BO XKS. ZH ZE UOUGEBK OH ZEBOJZQXBZOE Z HGAB KOUGBMZET PMZQM, BMOVTM EOB X PZKM, PXK X MXCZB AGHB CI HORUGR PZKMGK, ZE KOCGR UOUGEBK Z SEGP BMZK BO CG X NGAVKZOE XEN BMXB BMGRG PXK RGXAAI EOBMZET BO PZKM HOR. Z QOVAN EOB GDGE PZKM BO SEOP BMG BRVBM, HOR Z TVGKKGN OH PMXB ZB QOEKZKBGN. BMG BRVBM PXK BMXB AZHG ZK UGXEZETAGKK. Z MXN XK ZB PGRG AZDGN, AZDGN, XEN PXASGN, PXASGN, BZAA Z MXN QOUG BO X YRGQZYZQG XEN KXP QAGXRAI BMXB BMGRG PXK EOBMZET XMGXN OH UG CVB NGKBRVQBZOE. ZB PXK ZUYOKKZCAG BO KBOY, ZUYOKKZCAG BO TO CXQS, XEN ZUYOKKZCAG BO QAOKG UI GIGK OR XDOZN KGGZET BMXB BMGRG PXK EOBMZET XMGXN CVB KVHHGRZET XEN RGXA NGXBM--QOUYAGBG XEEZMZAXBZOE.             </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+            <hr>
+            <h2 id="abstract">Prompt 9</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+            </p>
+            <p>
+                When given an encrypted message, follow these steps: <br/>
+                1. Analyze letter frequencies in the ciphertext (Start with trying to find the letter A, E or I) <br/>
+                2. Identify common patterns and letter combinations <br/>
+                3. Map cipher letters to plaintext letters <br/>
+                4. Refine your mapping until the message is coherent <br/>
+                5. Return only the decrypted text with no additional commentary
+            </p>
+            <p>
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. There are no other ciphers being used, only this mono-alphabetic substitution cipher.
+            </p>
+            <p>
+                Provide only the decrypted English plaintext as your response without any explanations or additional text. Do not return any of the original cipher. Make sure your final output is in coherent English.
+            </p>
+            <p>       
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                L GN DAQCLQDEX IOGI OJNGQ ZLTE LF TLZZEX HLIO NGQY RJWE, OGRRY, FEWEQE EUGNRZEF AT LQFLQDEWLIY, IWJZY FRZEQXLX AT IOELW MLQX-AT REARZE XEDELCLQP AQE GQAIOEW HLIOAJI (FIWGQPEZY EQAJPO) GQY HAJQXF KELQP LQTZLDIEX, AT REARZE HOA FEEN JQGHGWE ECEQ IOGI IOEY GWE XEDELCLQP AQE GQAIOEW.             </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+            <hr>
+            <h2 id="abstract">Prompt 10</h2>
+            <p>
+                You are an expert cryptanalyst specialized in solving monoalphabetic substitution ciphers. Your task is to think very deeply to decode encrypted messages and provide the English plaintext solution.
+            </p>
+            <p>
+                When given an encrypted message, follow these steps: <br/>
+                1. Analyze letter frequencies in the ciphertext (Start with trying to find the letter A, E or I) <br/>
+                2. Identify common patterns and letter combinations <br/>
+                3. Map cipher letters to plaintext letters <br/>
+                4. Refine your mapping until the message is coherent <br/>
+                5. Return only the decrypted text with no additional commentary
+            </p>
+            <p>
+                Remember that in a monoalphabetic cipher, each letter in the original text is replaced by a different letter consistently throughout the message. For example, if 'A' is encrypted as 'X', then every 'A' in the plaintext will appear as 'X' in the ciphertext. There are no other ciphers being used, only this mono-alphabetic substitution cipher.
+            </p>
+            <p>
+                Provide only the decrypted English plaintext as your response without any explanations or additional text. Do not return any of the original cipher. Make sure your final output is in coherent English.
+            </p>
+            <p>       
+                Here is a message encrypted using a monoalphabetic substitution cipher. Every english character is mapped to a different english character, but all punctuation remains the same:
+            </p>
+            <p>
+                RQ AMJQY BT JADQ A SJAHH, QKKMWMQNB HANOCAOQ JTYQH BGAB WAN XPQAD SMJFHQ WTYQY JQSSAOQS RGQPQ QAWG HQBBQP MS PQFHAWQY XL ANTBGQP HQBBQP. BGQ FPTXHQJ RQ APQ BPLMNO BT STHZQ MS BT CNYQPSBANY WCPPQNB HHJ'S YMKKMWCHBMQS RMBG WPLFBTOPAFGMW FPTXHQJS MN OQNQPAH, ANY BT SQQ MK WAPQKCH BPAMNMNO WAN MJFPTZQ BGQ AWWCPAWL TK BGQSQ JTYQHS. BT STHZQ BGMS OTAH, RQ RMHH BQSB A WTJFAWB XASQ HHJ JTYQH RMBG SBABQ-TK-BGQ-APB AHOTPMBGJS ANY KMOCPQ TCB MK MB WAN CNYQPSBANY ANY STHZQ BGQSQ FCVVHQS. MK MB MS NTB FTSSMXHQ, RQ FHAN BT SGTR SQZQPAH PQASTNS RGL BGMS MS BGQ WASQ, ANY CNYQPSBANY BGQ KCNYQJQNBAH HMJMBABMTNS TK HHJ'S MN BGMS APQA.             </p>
+            <p>
+                What is the unencrypted English text:
+            </p>
+        </div>
+    </div>
+</body>
+</html>

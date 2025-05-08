@@ -104,3 +104,15 @@ document.addEventListener('DOMContentLoaded', () => {
   createCategoryButtons();
   document.addEventListener('click', handleClickOutside);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const gallery = btn.nextElementSibling;
+      gallery.classList.toggle('open');
+      btn.textContent = gallery.classList.contains('open')
+        ? 'Hide Screenshots'
+        : 'View Screenshots';
+    });
+  });
+});

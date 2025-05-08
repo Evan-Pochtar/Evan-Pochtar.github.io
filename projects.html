@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
   <link rel="stylesheet" href="static/styles.css" id="css">
-  <script src="mobile.js"></script> 
+  <script src="scripts/mobile.js"></script> 
   <!-- Created with https://realfavicongenerator.net/ -->
   <link rel="icon" type="image/png" href="./static/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="./static/favicon/favicon.svg" />
@@ -38,7 +38,7 @@
     </div>
   </header>
   <main class="projects-page">
-    <script src="search.js"></script> 
+    <script src="scripts/project-page.js"></script> 
     <div class="filter-container">
       <div class="category-buttons"></div>
       <div class="selected-tags"></div>
@@ -326,11 +326,21 @@
         <div class="screenshots">
           <!-- ImposterAI has 5 desktop images -->
           <div class="screenshot-grid desktop-shots">
-            <img src="static/img/project1/FeedPageWithMakeNewPostPopup.png" alt="ImposterAI screenshot 1">
-            <img src="static/img/project1/ProfilePage.png" alt="ImposterAI screenshot 2">
-            <img src="static/img/project1/SignedInFeedPage.png" alt="ImposterAI screenshot 3">
-            <img src="static/img/project1/SignedInIndividualPostPage.png" alt="ImposterAI screenshot 4">
-            <img src="static/img/project1/SignedOutFeedPage.png" alt="ImposterAI screenshot 5">
+            <a href="#" class="screenshot-link" data-full="static/img/project1/FeedPageWithMakeNewPostPopup.png">
+              <img src="static/img/project1/FeedPageWithMakeNewPostPopup.png" alt="ImposterAI screenshot 1">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project1/ProfilePage.png">
+              <img src="static/img/project1/ProfilePage.png" alt="ImposterAI screenshot 2">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project1/SignedInFeedPage.png">
+              <img src="static/img/project1/SignedInFeedPage.png" alt="ImposterAI screenshot 3">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project1/SignedInIndividualPostPage.png">
+              <img src="static/img/project1/SignedInIndividualPostPage.png" alt="ImposterAI screenshot 4">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project1/SignedOutFeedPage.png">
+              <img src="static/img/project1/SignedOutFeedPage.png" alt="ImposterAI screenshot 5">
+            </a>
           </div>
         </div>
       </div>
@@ -368,17 +378,35 @@
         <button class="toggle-btn">View Screenshots</button>
         <div class="screenshots">
           <div class="screenshot-grid desktop-shots">
-            <img src="static/img/project2/project-desktop.png" alt="Handiplan desktop screenshot 2">
-            <img src="static/img/project2/step-desktop.png" alt="Handiplan desktop screenshot 3">
-            <img src="static/img/project2/projects-desktop.png" alt="Handiplan desktop screenshot 1">
+            <a href="#" class="screenshot-link" data-full="static/img/project2/project-desktop.png">
+              <img src="static/img/project2/project-desktop.png" alt="Handiplan desktop screenshot 1">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project2/step-desktop.png">
+              <img src="static/img/project2/step-desktop.png" alt="Handiplan desktop screenshot 2">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project2/projects-desktop.png">
+              <img src="static/img/project2/projects-desktop.png" alt="Handiplan desktop screenshot 3">
+            </a>
           </div>
           <div class="screenshot-grid mobile-shots">
-            <img src="static/img/project2/mobile/projects-mobile.png" alt="Handiplan mobile screenshot 1">
-            <img src="static/img/project2/mobile/projects-mobile.png" alt="Handiplan mobile screenshot 2">
-            <img src="static/img/project2/mobile/material-mobile.png" alt="Handiplan mobile screenshot 4">
-            <img src="static/img/project2/mobile/materialcard-mobile.png" alt="Handiplan mobile screenshot 5">
-            <img src="static/img/project2/mobile/step-mobile.png" alt="Handiplan mobile screenshot 3">
-            <img src="static/img/project2/mobile/picture-mobile.png" alt="Handiplan mobile screenshot 6">
+            <a href="#" class="screenshot-link" data-full="static/img/project2/mobile/projects-mobile.png">
+              <img src="static/img/project2/mobile/projects-mobile.png" alt="Handiplan mobile screenshot 1">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project2/mobile/project-mobile.png">
+              <img src="static/img/project2/mobile/project-mobile.png" alt="Handiplan mobile screenshot 2">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project2/mobile/material-mobile.png">
+              <img src="static/img/project2/mobile/material-mobile.png" alt="Handiplan mobile screenshot 3">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project2/mobile/materialcard-mobile.png">
+              <img src="static/img/project2/mobile/materialcard-mobile.png" alt="Handiplan mobile screenshot 4">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project2/mobile/step-mobile.png">
+              <img src="static/img/project2/mobile/step-mobile.png" alt="Handiplan mobile screenshot 5">
+            </a>
+            <a href="#" class="screenshot-link" data-full="static/img/project2/mobile/picture-mobile.png">
+              <img src="static/img/project2/mobile/picture-mobile.png" alt="Handiplan mobile screenshot 6">
+            </a>
           </div>
         </div>
       </div>
@@ -573,4 +601,8 @@
       <p>© 2025 Evan Pochtar.<span class="rights"> All Rights Reserved.</span></p>
     </div>
   </footer>
+  <div id="lightbox" class="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img class="lightbox-img" src="" alt="Expanded screenshot">
+  </div>
 </body>

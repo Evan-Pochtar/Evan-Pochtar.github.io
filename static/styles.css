@@ -1052,10 +1052,26 @@ body {
   margin-bottom: 1rem;
 }
 
+.screenshot-grid.desktop-shots > a:last-child:nth-child(odd),
 .screenshot-grid.desktop-shots > img:last-child:nth-child(odd) {
   grid-column: 1 / -1;
   justify-self: center;
   max-width: 60%;
+}
+
+@media (max-width: 1280px) {
+  .screenshot-grid.desktop-shots {
+    grid-template-columns: 1fr;
+  }
+  .screenshot-grid.desktop-shots > a,
+  .screenshot-grid.desktop-shots > img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.screenshot-grid.desktop-shots a {
+  display: block;
 }
 
 .screenshot-grid.mobile-shots {
@@ -1070,6 +1086,46 @@ body {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   object-fit: cover;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox-img {
+  max-width: 99%;
+  max-height: 99%;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  color: var(--yellow);
 }
 
 /* Goodreads Widget */

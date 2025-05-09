@@ -477,7 +477,6 @@ body {
   text-decoration: underline;
 }
 
-
 /* papers.html */
 
 .papers-page {
@@ -686,8 +685,8 @@ body {
 @media screen and (min-width: 1775px) {
   .university-logo img {
     display: block;
-    max-width: 750px;
-    padding: 80px;
+    max-width: 700px;
+    padding: 100px;
     padding-bottom: 0px;
   }
 }
@@ -1027,7 +1026,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .toggle-btn:hover {
@@ -1065,6 +1064,11 @@ body {
   }
   .screenshot-grid.desktop-shots > a,
   .screenshot-grid.desktop-shots > img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .screenshot-grid.desktop-shots > a:last-child:nth-child(odd),
+  .screenshot-grid.desktop-shots > img:last-child:nth-child(odd) {
     width: 100%;
     max-width: 100%;
   }
@@ -1141,21 +1145,14 @@ body {
   margin-right: 5px;
 }
 
-.gr_grid_book_container img {
+.gr_grid_book_container img, .vg_grid_game_container img {
   width: 98px !important;
   height: 160px !important;
 }
 
-.goodreads, .vgames {
+.goodreads, .vgames { 
   display: block;
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-/* Video Games Widget */
-
-.vg_grid_game_container img {
-  width: 108px !important;
-  height: 160px !important;
 }

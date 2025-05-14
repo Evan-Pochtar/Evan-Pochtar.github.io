@@ -1,9 +1,9 @@
 const categories = {
   backend: ['Python', 'Typescript', 'Javascript', 'Go', 'C#', 'R'],
-  frontend: ['Svelte', 'Flask', 'EmberJS', 'HTML5', 'Tailwind CSS', 'React'],
+  frontend: ['Svelte', 'Flask', 'EmberJS', 'HTML5', 'Tailwind CSS', 'React', 'Playwright'],
   packages: ['Scikit-Learn', 'Pandas', 'MatplotLib', 'NetworkX', 'PyTorch', 'Tensorflow', 'OpenCV', 'OpenAI API'],
   database: ['Azure Blob Storage', 'Firebase', 'PostgreSQL', 'SQLite'],
-  other: ['LaTeX', 'Unity', 'Figma']
+  other: ['LaTeX', 'Unity', 'Figma', 'JSON']
 };
 
 let expandedCategory = null;

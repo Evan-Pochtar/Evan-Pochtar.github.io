@@ -147,6 +147,12 @@ body {
   width: 100%;
 }
 
+.footer-name {
+  font-size: 1.0rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .navbar .container {
     padding: 0 1rem;
@@ -236,7 +242,7 @@ body {
     display: none;
   }
 
-  .footer .rights {
+  .footer .footer-name {
     display: none;
   }
 }
@@ -1111,8 +1117,7 @@ body {
 }
 
 .lightbox-img {
-  max-width: 99%;
-  max-height: 99%;
+  max-width: var(--maxwidth);
   border-radius: 4px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }

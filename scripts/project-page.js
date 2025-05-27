@@ -3,7 +3,7 @@ const categories = {
   frontend: ['Svelte', 'Flask', 'EmberJS', 'HTML5', 'Tailwind CSS', 'React', 'Playwright'],
   packages: ['Scikit-Learn', 'Pandas', 'MatplotLib', 'NetworkX', 'PyTorch', 'Tensorflow', 'OpenCV', 'OpenAI API'],
   database: ['Azure Blob Storage', 'Firebase', 'PostgreSQL', 'SQLite'],
-  other: ['LaTeX', 'Unity', 'Figma', 'JSON']
+  other: ['LaTeX', 'Unity', 'Figma', 'JSON', 'ROS2']
 };
 
 let expandedCategory = null;

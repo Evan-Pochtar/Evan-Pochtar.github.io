@@ -417,6 +417,31 @@
         </div>
       </div>
       <div class="project-card">
+        <h2 class="project-title">Navigating a Dynamic Environment with LiDAR using a Turtlebot3 Robot</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          </div>
+          <div class="skill-item">
+            <img title="ROS2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ros/ros-original.svg" />
+          </div>
+        </div>
+        <p class="project-meta">
+          <strong>Poster:</strong> 
+          <a href="./static/papers/CSCI5551-Group01.pdf" target="_blank">View Poster</a>
+          <br>
+          <strong>Collaborators:</strong> William Anderson, William Chastek, and Ajitesh Parthasarathy
+        </p>
+        <p class="project-description">
+          This project addresses the challenge of autonomous navigation in environments containing both static and dynamic obstacles. 
+          The objective was to guide a Turtlebot3 robot from a predefined start position to a goal location within simulated environments featuring cylindrical obstacles—both stationary and dynamically moving with randomized velocities. 
+          The system takes as input a map containing these obstacles along with the robot's start and goal poses and outputs motion controls that enable the robot to reach the goal while avoiding collisions using only 5 LiDAR scans per second. 
+          Implemented using ROS2 Humble and the Gazebo simulator, the system integrates key components including a particle filter for localization, a movement controller, and an obstacle avoidance module with dynamic obstacle handling. 
+          Evaluation was conducted using six maps of varying complexity from the BARN (Benchmark of Autonomous Robot Navigation) dataset, with eight randomized trials per map. 
+          Outcomes were recorded in terms of successful, partially successful (with collisions), and failed attempts to reach the goal, demonstrating the system's performance under different levels of environmental difficulty.
+        </p>
+      </div>
+      <div class="project-card">
         <h2 class="project-title">Evan-Pochtar.github.io</h2>
         <div class="skills-list">
           <div class="skill-item">

@@ -948,6 +948,58 @@ body {
   white-space: nowrap;
 }
 
+@media (max-width: 1080px) {
+    .projects-page {
+        padding: 1rem 0.5rem;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    .project-date {
+        font-size: 0.85rem;
+        margin-top: 0;
+    }
+
+    .skills-list {
+        gap: 0.75rem;
+        justify-content: flex-start;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+
+    .project-meta,
+    .project-description {
+        font-size: 0.95rem;
+    }
+
+    .project-card .skill-item {
+        max-width: 64px;
+    }
+
+    .project-card .skill-item img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .project-card .skill-item p {
+        font-size: 0.75rem;
+    }
+
+    .project-date {
+      margin-left: 0;
+    }
+}
+
 .filter-container {
   margin-bottom: 1rem;
 }

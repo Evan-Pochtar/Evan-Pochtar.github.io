@@ -357,8 +357,8 @@ body {
 
 .hero .resume-link {
   display: inline-block;
-  margin-top: 1rem;
   padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
   background: #007BFF;
   color: #fff;
   text-decoration: none;
@@ -479,7 +479,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.contact-list a:hover {
+.contact a:hover, .featured a:hover, .skills a:hover {
   text-decoration: underline;
 }
 

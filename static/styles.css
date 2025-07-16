@@ -565,8 +565,11 @@ body {
   flex: 1;
 }
 
-.university-logo img {
+.university-logo {
   display: none;
+}
+
+.university-logo img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -688,12 +691,25 @@ body {
   opacity: 1;
 }
 
-@media screen and (min-width: 1775px) {
+
+@media screen and (min-width: 1680px) {
+  .university-section {
+    align-items: center;
+  }
+
+  .university-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+  }
+
   .university-logo img {
     display: block;
-    max-width: 700px;
-    padding: 100px;
-    padding-bottom: 0px;
+    max-width: 80%;
+    max-height: 80%;
+    padding: 2rem;
+    object-fit: contain;
   }
 }
 

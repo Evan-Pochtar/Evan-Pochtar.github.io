@@ -1107,7 +1107,7 @@ body {
 }
 
 /* Screenshots for Projects in projects.html */
-.toggle-btn {
+.toggle-btn, .toggle-btn-poster {
   display: block;
   margin: 1rem auto;
   padding: 0.6rem 1.2rem;
@@ -1120,9 +1120,14 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.toggle-btn:hover {
+.toggle-btn:hover, .toggle-btn-poster:hover {
   background-color: var(--yellow);
   color:black;
+}
+
+.poster {
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 .screenshots {

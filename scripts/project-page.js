@@ -118,6 +118,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.toggle-btn-poster').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const gallery = btn.nextElementSibling;
+      gallery.classList.toggle('open');
+      btn.textContent = gallery.classList.contains('open')
+        ? 'Hide Poster'
+        : 'View Poster';
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = lightbox.querySelector('.lightbox-img');
   const closeBtn = lightbox.querySelector('.lightbox-close');

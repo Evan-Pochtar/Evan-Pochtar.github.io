@@ -1207,7 +1207,10 @@ body {
 }
 
 .lightbox-img {
-  max-width: var(--maxwidth);
+  max-width: 90vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }

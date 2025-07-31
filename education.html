@@ -69,7 +69,7 @@
       <br/>
       <div class="course-toggle">
         <div class="toggle-header" data-toggle="graduate">
-          <span class="arrow">&#9654;</span> <h2>Graduate Courses</h2>
+          <span class="arrow">&#9654;&#xFE0E;</span> <h2>Graduate Courses</h2>
         </div>
         <div class="toggle-content" id="graduate">
           <div class="course-semester">
@@ -208,7 +208,7 @@
         if (isActive) {
           content.style.maxHeight = null;
         } else {
-          content.style.maxHeight = content.scrollHeight + 'px';
+          content.style.maxHeight = content.scrollHeight + 'vh';
         }
         header.classList.toggle('active');
         content.classList.toggle('active');

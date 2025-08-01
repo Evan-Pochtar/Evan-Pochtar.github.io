@@ -597,7 +597,6 @@ body {
 
 .university h2 {
   font-size: 1.65rem;
-  color: #2c3e50;
   font-weight: 600;
 }
 
@@ -825,11 +824,23 @@ body {
 }
 
 .experience-section {
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6c757d, #495057);
 }
 
 .experience {
@@ -842,10 +853,18 @@ body {
 }
 
 .experience h3 {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 0.25rem;
+  font-size: 1.0rem;
+  color: #5a6c7d;
+  margin-bottom: 0.5rem;
   font-style: italic;
+  font-weight: 400;
+}
+
+.related-experience {
+  font-size: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .subheader {

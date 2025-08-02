@@ -492,7 +492,7 @@ body {
 
 .introduction p {
   color: var(--light-gray);
-  max-width: calc(var(--maxwidth) - 35%);
+  max-width: var(--maxwidth);
   margin: 0 auto;
 }
 

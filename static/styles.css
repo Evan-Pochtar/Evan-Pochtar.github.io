@@ -28,7 +28,6 @@
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.08);
   
   /* Gradients */
   --gradient-dark: linear-gradient(to bottom, var(--medium-gray), var(--dark-gray));
@@ -94,6 +93,84 @@ body {
   right: 0;
   height: 4px;
   background: var(--gradient-accent);
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.toggle {
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.toggle-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  background: var(--gradient-light);
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.toggle-header:hover {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.toggle-header h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.toggle-header .arrow {
+  margin-right: 1rem;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.toggle-header.active .arrow {
+  transform: rotate(90deg);
+}
+
+.toggle-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  background: #ffffff;
+}
+
+.toggle-content.active {
+  opacity: 1;
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .toggle-header {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .toggle-header h2 {
+    font-size: 1.2rem;
+  }
 }
 
 /* ===== NAVIGATION ===== */
@@ -675,7 +752,7 @@ body {
   border: 1px solid #e3e6ea;
   border-radius: var(--border-radius-lg);
   padding: 2.5rem;
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--shadow-lg);
   position: relative;
   overflow: hidden;
 }
@@ -696,63 +773,6 @@ body {
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: center;
-}
-
-.course-toggle {
-  margin-bottom: 1.5rem;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.toggle-header {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 1.25rem 1.5rem;
-  font-size: 1.4rem;
-  color: var(--text-primary);
-  background: var(--gradient-light);
-  border-bottom: 1px solid #e9ecef;
-  margin-bottom: 0;
-  transition: all 0.3s ease;
-  user-select: none;
-}
-
-.toggle-header:hover {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
-
-.toggle-header h2 {
-  font-weight: 600;
-  font-size: 1.4rem;
-  margin: 0;
-}
-
-.toggle-header .arrow {
-  margin-right: 1rem;
-  font-size: 1rem;
-  transition: transform 0.3s ease;
-  color: var(--text-primary);
-  font-weight: bold;
-}
-
-.toggle-header.active .arrow {
-  transform: rotate(90deg);
-}
-
-.toggle-content {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
-  background: #ffffff;
-}
-
-.toggle-content.active {
-  opacity: 1;
-  padding: 1.5rem;
 }
 
 .course-semester {
@@ -839,15 +859,6 @@ body {
     font-size: 1.6rem;
   }
   
-  .toggle-header {
-    padding: 1rem;
-    font-size: 1.2rem;
-  }
-  
-  .toggle-header h2 {
-    font-size: 1.2rem;
-  }
-  
   .course-semester {
     padding: 1rem;
   }
@@ -861,26 +872,6 @@ body {
   margin: 2rem auto;
   padding: 1rem;
   width: var(--maxwidth);
-}
-
-.experience-section {
-  background: var(--gradient-light);
-  border: 1px solid var(--border-gray);
-  border-radius: var(--border-radius-lg);
-  padding: 1.5rem;
-  box-shadow: var(--shadow-lg);
-  position: relative;
-  overflow: hidden;
-}
-
-.experience-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--gradient-accent);
 }
 
 .experience {
@@ -934,51 +925,16 @@ body {
   width: var(--maxwidth);
 }
 
-.section h2 {
+.about-page > .section h1 {
   font-size: 1.7rem;
   color: var(--dark-gray);
   margin-bottom: 1rem;
 }
 
-.section p,
-.section ul {
+.about-page >.section p,
+.about-page > .section ul {
   font-size: 1rem;
   color: var(--light-gray);
-}
-
-.section ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  margin: 0;
-}
-
-.section ul li {
-  margin-bottom: 0.5rem;
-}
-
-.toggle-header-about {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 0.5rem 0;
-  font-size: 1.1rem;
-  border-bottom: 1px solid var(--border-gray);
-  color: var(--black);
-  margin-bottom: 0.5rem;
-}
-
-.toggle-header-about .arrow {
-  margin-right: 0.5rem;
-  font-size: 0.7rem;
-  transition: transform 0.2s ease-in-out;
-}
-
-.toggle-header-about.active .arrow {
-  transform: rotate(90deg);
-}
-
-.about-toggle {
-  margin-bottom: 1rem;
 }
 
 /* ===== SKILLS PAGE ===== */

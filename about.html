@@ -40,7 +40,7 @@
   <main>
     <div class="about-page">
       <section class="section">
-        <h2>Who Am I?</h2>
+        <h1>Who Am I?</h1>
         <p>
           I'm Evan Pochtar, a 21-year-old Master's student in Computer Science at the University of Minnesota, specializing in Artificial Intelligence, Machine learning, and Software Engineering.
         </p>
@@ -76,14 +76,14 @@
         </p>
       </section>
       <section class="section languages">
-        <h2>Languages I Speak</h2>
+        <h1>Languages I Speak</h1>
         <ul>
           <li>English (Fluent)</li>
           <li>Russian (Intermediate, Language used by my family at home)</li>
         </ul>
       </section>
       <section class="section professional-interests">
-        <h2>Professional Interests</h2>
+        <h1>Professional Interests</h1>
         <ul>
           <li>Deep Learning and Classical Machine Learning</li>
           <li>Computer Vision and Image Processing</li>
@@ -91,11 +91,11 @@
           <li>Full-Stack Development</li>
         </ul>
       </section>
-      <section class="section hobbies">
-        <h2>Hobbies</h2>
-        <div class="about-toggle">
-          <div class="toggle-header-about" data-toggle="reading">
-            <span class="arrow">&#9654;</span> <h3>Reading</h3>
+      <section class="section">
+        <h1>Hobbies</h1>
+        <div class="toggle">
+          <div class="toggle-header" data-toggle="reading">
+            <span class="arrow">&#9654;&#xFE0E;</span> <h2>Reading</h2>
           </div>
           <div class="toggle-content" id="reading">
             <div class="goodreads">
@@ -163,9 +163,9 @@
             <span style="color: #382110">If you want to see more, visit my goodreads <a style="text-decoration: none; color: #0000EE;" href="https://www.goodreads.com/evanpochtar" target="_blank">here!</a></span>
           </div>
         </div>
-        <div class="about-toggle">
-          <div class="toggle-header-about" data-toggle="games">
-            <span class="arrow">&#9654;</span> <h3>Video Games</h3>
+        <div class="toggle">
+          <div class="toggle-header" data-toggle="games">
+            <span class="arrow">&#9654;&#xFE0E;</span> <h2>Video Games</h2>
           </div>
           <div class="toggle-content" id="games">
             <div class="vgames">
@@ -193,9 +193,9 @@
             </div>
           </div>
         </div>
-        <div class="about-toggle">
-          <div class="toggle-header-about" data-toggle="history">
-            <span class="arrow">&#9654;</span> <h3>History</h3>
+        <div class="toggle">
+          <div class="toggle-header" data-toggle="history">
+            <span class="arrow">&#9654;&#xFE0E;</span> <h2>History</h2>
           </div>
           <div class="toggle-content" id="history">
             <div class="goodreads">
@@ -234,9 +234,9 @@
             </div>
           </div>
         </div>
-        <div class="about-toggle">
-          <div class="toggle-header-about" data-toggle="exercise">
-            <span class="arrow">&#9654;</span> <h3>Exercise</h3>
+        <div class="toggle">
+          <div class="toggle-header" data-toggle="exercise">
+            <span class="arrow">&#9654;&#xFE0E;</span> <h2>Exercise</h2>
           </div>
           <div class="toggle-content" id="exercise">
             As someone who thrives on having a calender and a set schedule of things I want to do for the day, I find myself loving activities like biking and running that I can do everyday and feel a little more awake.
@@ -263,14 +263,14 @@
     </div>
   </footer>
   <script>
-    document.querySelectorAll('.toggle-header-about').forEach(header => {
+    document.querySelectorAll('.toggle-header').forEach(header => {
       header.addEventListener('click', () => {
         const content = document.getElementById(header.dataset.toggle);
         const isActive = content.classList.contains('active');
         if (isActive) {
           content.style.maxHeight = null;
         } else {
-          content.style.maxHeight = content.scrollHeight + 'px';
+          content.style.maxHeight = content.scrollHeight + 'vh';
         }
         header.classList.toggle('active');
         content.classList.toggle('active');

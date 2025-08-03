@@ -82,7 +82,7 @@ function updateSelectedTags() {
 }
 
 function filterProjects() {
-  const projects = document.querySelectorAll('.project-card');
+  const projects = document.querySelectorAll('section');
   projects.forEach(project => {
     const skills = Array.from(project.querySelectorAll('.skill-item img')).map(img => img.title);
     const isVisible = selectedTags.size === 0 || Array.from(selectedTags).some(tag => skills.includes(tag));

@@ -608,11 +608,6 @@ section ul li {
   color: var(--black);
 }
 
-.papers-list {
-  list-style: none;
-  padding: 0;
-}
-
 .papers-list li {
   background-color: var(--bg-lighter);
   border: 1px solid var(--border-gray);
@@ -622,22 +617,22 @@ section ul li {
   margin-bottom: 2rem;
 }
 
-.papers-list .paper-title {
+.papers-list > section .paper-title {
   color: var(--black);
   text-decoration: none;
   font-size: 1.5rem;
   display: block;
 }
 
-.papers-list .paper-title img {
+.papers-list > section .paper-title img {
   max-width: 1.5rem;
 }
 
-.papers-list .paper-title:hover {
+.papers-list > section .paper-title:hover {
   text-decoration: underline;
 }
 
-.papers-list .paper-description {
+.papers-list > section .paper-description {
   color: var(--light-gray);
   font-size: 0.9rem;
   margin-bottom: 2rem;
@@ -909,7 +904,8 @@ section ul li {
 }
 
 .skills-grid,
-.projects-list {
+.projects-list,
+.papers-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -979,7 +975,7 @@ section ul li {
   line-height: 1.5;
 }
 
-.projects-list > section, .skills-grid > section {
+.projects-list > section, .skills-grid > section, .papers-list > section {
   box-shadow: var(--shadow-md);
 }
 

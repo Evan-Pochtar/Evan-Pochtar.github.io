@@ -1287,30 +1287,152 @@ section ul li {
 }
 
 /* ===== EXTERNAL WIDGETS ===== */
-/* Goodreads Widget */
-.gr_grid_container,
-.vg_grid_container {
+.gr_grid_container, .vg_grid_container {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
 }
 
-.gr_grid_book_container,
-.vg_grid_game_container {
-  float: left;
-  padding: 0px 0px;
+.gr_grid_book_container, .vg_grid_game_container {
+  float: none;
+  padding: 0;
   overflow: hidden;
-  margin-right: 5px;
+  margin: 0;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: var(--shadow-sm);
 }
 
-.gr_grid_book_container img,
-.vg_grid_game_container img {
+.gr_grid_book_container:hover, .vg_grid_game_container:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: var(--shadow-lg);
+  z-index: 2;
+}
+
+.gr_grid_book_container img, .vg_grid_game_container img {
   width: 98px !important;
   height: 160px !important;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  object-fit: cover;
+  display: block;
 }
 
-.goodreads,
-.vgames {
+.gr_grid_book_container:hover img, .vg_grid_game_container:hover img {
+  filter: brightness(1.1) saturate(1.1);
+}
+
+.gr_grid_book_container::after, .vg_grid_game_container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 221, 87, 0.1), rgba(255, 221, 87, 0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: var(--border-radius);
+  pointer-events: none;
+}
+
+.gr_grid_book_container:hover::after, .vg_grid_game_container:hover::after {
+  opacity: 1;
+}
+
+.goodreads, .vgames {
   display: block;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+}
+
+.goodreads h3, .vgames h3 {
+  color: var(--text-primary);
+  font-size: 1.3rem;
+}
+
+.goodreads .gr_grid_container p {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.vgames .vg_grid_container p {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.goodreads .gr_grid_container:has(p), .vgames .vg_grid_container:has(p) {
+  display: block;
+}
+
+.goodreads .gr_grid_container:has(p) .gr_grid_book_container,
+.vgames .vg_grid_container:has(p) .vg_grid_game_container {
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.goodreads-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.goodreads-link:hover {
+  color: var(--primary-blue-hover);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .gr_grid_container, .vg_grid_container {
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .gr_grid_book_container, .vg_grid_game_container {
+    transition: all 0.2s ease;
+  }
+  
+  .gr_grid_book_container:hover, .vg_grid_game_container:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
+  
+  .gr_grid_book_container img, .vg_grid_game_container img {
+    width: 85px !important;
+    height: 140px !important;
+  }
+  
+  .goodreads .gr_grid_container:has(p) .gr_grid_book_container,
+  .vgames .vg_grid_container:has(p) .vg_grid_game_container {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .goodreads .gr_grid_container:has(p) .gr_grid_book_container img,
+  .vgames .vg_grid_container:has(p) .vg_grid_game_container img {
+    width: 75px !important;
+    height: 120px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .gr_grid_book_container img, .vg_grid_game_container img {
+    width: 75px !important;
+    height: 120px !important;
+  }
+  
+  .goodreads .gr_grid_container:has(p) .gr_grid_book_container img,
+  .vgames .vg_grid_container:has(p) .vg_grid_game_container img {
+    width: 65px !important;
+    height: 105px !important;
+  }
 }

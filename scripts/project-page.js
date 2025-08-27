@@ -8,6 +8,7 @@ const categories = {
 
 let expandedCategory = null;
 let selectedTags = new Set();
+let showCurrentOnly = false;
 
 function createCategoryButtons() {
   const container = document.querySelector('.category-buttons');
@@ -23,10 +24,10 @@ function createCategoryButtons() {
     buttonWrapper.appendChild(button);
     container.appendChild(buttonWrapper);
   });
- }
+}
 
-function handleCategoryClick(category, wrapper) {
-  event.stopPropagation();
+function handleCategoryClick(category, wrapper, event) {
+  if (event && event.stopPropagation) event.stopPropagation();
   if (expandedCategory === category) {
     const existingDropdown = wrapper.querySelector('.dropdown');
     if (existingDropdown) existingDropdown.remove();
@@ -83,11 +84,59 @@ function updateSelectedTags() {
 
 function filterProjects() {
   const projects = document.querySelectorAll('section');
-  projects.forEach(project => {
+  const noProjectsMessage = document.getElementById('noProjectsMessage');
+  let visibleCount = 0;
+
+  projects.forEach((project, index) => {
     const skills = Array.from(project.querySelectorAll('.skill-item img')).map(img => img.title);
-    const isVisible = selectedTags.size === 0 || Array.from(selectedTags).some(tag => skills.includes(tag));
-    project.style.display = isVisible ? '' : 'none';
+    const projectDate = project.querySelector('.project-date')?.textContent || '';
+    const matchesTags = selectedTags.size === 0 || Array.from(selectedTags).some(tag => skills.includes(tag));
+    const matchesCurrent = !showCurrentOnly || projectDate.includes('Current');
+    const isVisible = matchesTags && matchesCurrent;
+    
+    if (isVisible) {
+      visibleCount++;
+      setTimeout(() => {
+        project.classList.remove('fade-out');
+        project.style.display = '';
+      }, index * 50);
+    } else {
+      project.classList.add('fade-out');
+      setTimeout(() => {
+        project.style.display = 'none';
+      }, 400);
+    }
   });
+
+  setTimeout(() => {
+    if (!noProjectsMessage) return;
+    if (visibleCount === 0) {
+      noProjectsMessage.classList.add('show');
+    } else {
+      noProjectsMessage.classList.remove('show');
+    }
+  }, 200);
+}
+
+function handleCurrentProjectsClick() {
+  const btn = document.getElementById('currentProjectsBtn');
+  btn.style.transform = 'scale(0.95)';
+  
+  setTimeout(() => {
+    btn.style.transform = '';
+    
+    showCurrentOnly = !showCurrentOnly;
+    
+    if (showCurrentOnly) {
+      btn.classList.add('active');
+      btn.textContent = 'Show All Projects';
+    } else {
+      btn.classList.remove('active');
+      btn.textContent = 'Show Current Projects';
+    }
+    
+    filterProjects();
+  }, 100);
 }
 
 function handleClickOutside(event) {
@@ -98,11 +147,15 @@ function handleClickOutside(event) {
       expandedCategory = null;
     }
   }
- }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   createCategoryButtons();
   document.addEventListener('click', handleClickOutside);
+  const currentBtn = document.getElementById('currentProjectsBtn');
+  if (currentBtn) {
+    currentBtn.addEventListener('click', handleCurrentProjectsClick);
+  }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -134,7 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxImg = lightbox.querySelector('.lightbox-img');
   const closeBtn = lightbox.querySelector('.lightbox-close');
 
-  // Open lightbox on click
   document.querySelectorAll('.screenshot-link').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
@@ -144,7 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close on clicking the close button or outside the image
   closeBtn.addEventListener('click', () => {
     lightbox.setAttribute('hidden', '');
     lightboxImg.src = '';

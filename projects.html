@@ -40,8 +40,19 @@
   <main class="projects-page">
     <script src="scripts/project-page.js"></script> 
     <div class="filter-container">
-      <div class="category-buttons"></div>
-      <div class="selected-tags"></div>
+      <div class="filter-left">
+        <div class="category-buttons"></div>
+        <div class="selected-tags"></div>
+      </div>
+      <div class="filter-right">
+        <button class="current-projects-btn" id="currentProjectsBtn">
+          Show Current Projects
+        </button>
+      </div>
+    </div>
+    <div class="no-projects-message" id="noProjectsMessage">
+      <h3>No Projects Found</h3>
+      <p>No projects match your current filter criteria. Try adjusting your filters or clearing your selections to see more projects.</p>
     </div>
     <div class="projects-list">
       <section>

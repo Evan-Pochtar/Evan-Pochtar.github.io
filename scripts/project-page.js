@@ -88,7 +88,7 @@ function filterProjects() {
   let visibleCount = 0;
 
   projects.forEach((project, index) => {
-    const skills = Array.from(project.querySelectorAll('.skill-item img')).map(img => img.title);
+    const skills = Array.from(project.querySelectorAll('.skill-item img')).map(img => img.name);
     const projectDate = project.querySelector('.project-date')?.textContent || '';
     const matchesTags = selectedTags.size === 0 || Array.from(selectedTags).some(tag => skills.includes(tag));
     const matchesCurrent = !showCurrentOnly || projectDate.includes('Current');
@@ -205,5 +205,17 @@ document.addEventListener('DOMContentLoaded', () => {
       lightbox.setAttribute('hidden', '');
       lightboxImg.src = '';
     }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.skill-item img[name]').forEach(img => {
+    const title = img.getAttribute('name');
+    const skillItem = img.closest('.skill-item');
+    
+    const tooltip = document.createElement('div');
+    tooltip.className = 'skill-tooltip';
+    tooltip.textContent = title;
+    skillItem.appendChild(tooltip);
   });
 });

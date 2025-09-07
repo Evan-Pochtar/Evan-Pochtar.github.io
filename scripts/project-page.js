@@ -1,9 +1,9 @@
 const categories = {
-  backend: ['Python', 'Typescript', 'Javascript', 'Rust', 'Go', 'C#', 'R'],
-  frontend: ['Svelte', 'Django', 'Flask', 'EmberJS', 'ReactJS', 'Tauri', 'HTML5', 'Tailwind CSS', 'Playwright'],
-  packages: ['Scikit-Learn', 'Pandas', 'MatplotLib', 'NetworkX', 'PyTorch', 'Tensorflow', 'OpenCV', 'OpenAI API', 'Pytest'],
+  backend: ['C#', 'Go', 'Javascript', 'Python', 'R', 'Rust', 'Typescript'],
+  frontend: ['Django', 'EmberJS', 'Flask', 'HTML5', 'Playwright', 'ReactJS', 'Svelte', 'Tailwind CSS', 'Tauri'],
+  packages: ['MatplotLib', 'NetworkX', 'OpenAI API', 'OpenCV', 'Pandas', 'PyTorch', 'Pytest', 'Scikit-Learn', 'Tensorflow'],
   database: ['Azure Blob Storage', 'Firebase', 'PostgreSQL', 'SQLite'],
-  other: ['LaTeX', 'Unity', 'Figma', 'JSON', 'ROS2', 'Devicon', 'Github Actions', 'Google Colab', 'Jira', 'Blender', 'OAuth', 'ESLint']
+  other: ['Blender', 'Devicon', 'ESLint', 'Figma', 'Github Actions', 'Google Colab', 'Jira', 'JSON', 'LaTeX', 'OAuth', 'ROS2', 'Unity']
 };
 
 let expandedCategory = null;

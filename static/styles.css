@@ -2,7 +2,7 @@
 :root {
   /* Layout */
   --maxwidth: 65%;
-  
+
   /* Colors */
   --yellow: #ffdd57;
   --white: #f4f4f4;
@@ -15,41 +15,53 @@
   --bg-light: #f8f8f8;
   --bg-lighter: #f9f9f9;
   --bg-lightest: #eeeeee;
-  --primary-blue: #007BFF;
+  --primary-blue: #007bff;
   --primary-blue-hover: #0056b3;
   --success-green: #248f3d;
   --text-primary: #2c3e50;
   --text-secondary: #4a5568;
   --text-muted: #5a6c7d;
-  
+
   /* Spacing */
   --border-radius: 8px;
   --border-radius-lg: 16px;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
-  
+
   /* Gradients */
-  --gradient-dark: linear-gradient(to bottom, var(--medium-gray), var(--dark-gray));
+  --gradient-dark: linear-gradient(
+    to bottom,
+    var(--medium-gray),
+    var(--dark-gray)
+  );
   --gradient-light: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   --gradient-accent: linear-gradient(90deg, #6c757d, #495057);
 }
 
 /* ===== RESPONSIVE BREAKPOINTS ===== */
 @media (max-width: 2400px) and (min-width: 1920px) {
-  :root { --maxwidth: 75%; }
+  :root {
+    --maxwidth: 75%;
+  }
 }
 
 @media (max-width: 1919px) and (min-width: 1280px) {
-  :root { --maxwidth: 85%; }
+  :root {
+    --maxwidth: 85%;
+  }
 }
 
 @media (max-width: 1279px) and (min-width: 1080px) {
-  :root { --maxwidth: 90%; }
+  :root {
+    --maxwidth: 90%;
+  }
 }
 
 @media (max-width: 1079px) {
-  :root { --maxwidth: 95%; }
+  :root {
+    --maxwidth: 95%;
+  }
 }
 
 /* ===== BASE STYLES ===== */
@@ -86,7 +98,7 @@ section {
 }
 
 section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -153,7 +165,10 @@ section ul li {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.4s ease,
+    padding 0.4s ease;
   background: #ffffff;
 }
 
@@ -167,7 +182,7 @@ section ul li {
     padding: 1rem;
     font-size: 1.2rem;
   }
-  
+
   .toggle-header h2 {
     font-size: 1.2rem;
   }
@@ -205,7 +220,7 @@ section ul li {
 }
 
 .logo-text::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -236,7 +251,7 @@ section ul li {
 }
 
 .navbar .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -260,7 +275,7 @@ section ul li {
 }
 
 .navbar .nav-links .active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -297,7 +312,7 @@ section ul li {
     padding: 0 1rem;
     gap: 1rem;
   }
-  
+
   .logo-text {
     font-size: 1.4rem;
   }
@@ -392,12 +407,12 @@ section ul li {
 }
 
 .github-icon {
-  background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg');
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
   filter: invert(1);
 }
 
 .linkedin-icon {
-  background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg');
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg");
 }
 
 .email-icon {
@@ -468,7 +483,9 @@ section ul li {
 .hero .resume-link {
   display: inline-block;
   padding: 0.5rem 1rem;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
   background: var(--primary-blue);
   color: #fff;
   text-decoration: none;
@@ -781,14 +798,14 @@ section ul li {
   .university-section {
     align-items: center;
   }
-  
+
   .university-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 0 0 50%;
   }
-  
+
   .university-logo img {
     display: block;
     max-width: 80%;
@@ -803,21 +820,21 @@ section ul li {
     gap: 2rem;
     margin: 2rem auto;
   }
-  
+
   .university-section,
   .courses-section {
     padding: 1.5rem;
     margin: 0 0.5rem;
   }
-  
+
   .university h2 {
     font-size: 1.4rem;
   }
-  
+
   .courses-section > h1 {
     font-size: 1.6rem;
   }
-  
+
   .course-semester {
     padding: 1rem;
   }
@@ -890,7 +907,7 @@ section ul li {
   margin-bottom: 1rem;
 }
 
-.about-page >section p,
+.about-page > section p,
 .about-page > section ul {
   font-size: 1rem;
   color: var(--light-gray);
@@ -976,7 +993,9 @@ section ul li {
   line-height: 1.5;
 }
 
-.projects-list > section, .skills-grid > section, .papers-list > section {
+.projects-list > section,
+.skills-grid > section,
+.papers-list > section {
   box-shadow: var(--shadow-md);
 }
 
@@ -1073,13 +1092,18 @@ section ul li {
 }
 
 .current-projects-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.5s;
 }
 
@@ -1145,7 +1169,9 @@ section.fade-out {
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
   text-transform: capitalize;
 }
 
@@ -1222,7 +1248,7 @@ section.fade-out {
 }
 
 .skill-item img:hover {
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .skill-tooltip {
@@ -1245,7 +1271,7 @@ section.fade-out {
 }
 
 .skill-tooltip::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 50%;
@@ -1265,7 +1291,7 @@ section.fade-out {
     align-items: stretch;
     border-radius: 12px;
   }
-  
+
   .filter-right {
     justify-content: center;
     margin-top: 0;
@@ -1274,15 +1300,15 @@ section.fade-out {
   .filter-left {
     gap: 1.25rem;
   }
-  
+
   .no-projects-message {
     padding: 2rem 1.5rem;
   }
-  
+
   .no-projects-message h3 {
     font-size: 1.3rem;
   }
-  
+
   .no-projects-message p {
     font-size: 0.9rem;
   }
@@ -1301,16 +1327,16 @@ section.fade-out {
     position: relative;
     overflow: visible;
   }
-  
+
   .current-projects-btn:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   }
-  
+
   .current-projects-btn:active {
     transform: scale(0.98);
     transition: transform 0.1s ease;
-    box-shadow: 
+    box-shadow:
       0 2px 8px rgba(255, 221, 87, 0.3),
       0 0 0 2px rgba(255, 221, 87, 0.1);
   }
@@ -1343,7 +1369,9 @@ section.fade-out {
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
   box-shadow: var(--shadow-md);
 }
 
@@ -1448,13 +1476,13 @@ section.fade-out {
   .screenshot-grid.desktop-shots {
     grid-template-columns: 1fr;
   }
-  
+
   .screenshot-grid.desktop-shots > a,
   .screenshot-grid.desktop-shots > img {
     width: 100%;
     max-width: 100%;
   }
-  
+
   .screenshot-grid.desktop-shots > a:last-child:nth-child(odd),
   .screenshot-grid.desktop-shots > img:last-child:nth-child(odd) {
     width: 100%;
@@ -1512,7 +1540,8 @@ section.fade-out {
 }
 
 /* ===== EXTERNAL WIDGETS ===== */
-.gr_grid_container, .vg_grid_container {
+.gr_grid_container,
+.vg_grid_container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1520,7 +1549,8 @@ section.fade-out {
   justify-content: flex-start;
 }
 
-.gr_grid_book_container, .vg_grid_game_container {
+.gr_grid_book_container,
+.vg_grid_game_container {
   float: none;
   padding: 0;
   overflow: hidden;
@@ -1531,13 +1561,15 @@ section.fade-out {
   box-shadow: var(--shadow-sm);
 }
 
-.gr_grid_book_container:hover, .vg_grid_game_container:hover {
+.gr_grid_book_container:hover,
+.vg_grid_game_container:hover {
   transform: translateY(-4px) scale(1.05);
   box-shadow: var(--shadow-lg);
   z-index: 2;
 }
 
-.gr_grid_book_container img, .vg_grid_game_container img {
+.gr_grid_book_container img,
+.vg_grid_game_container img {
   width: 98px !important;
   height: 160px !important;
   border-radius: var(--border-radius);
@@ -1546,36 +1578,45 @@ section.fade-out {
   display: block;
 }
 
-.gr_grid_book_container:hover img, .vg_grid_game_container:hover img {
+.gr_grid_book_container:hover img,
+.vg_grid_game_container:hover img {
   filter: brightness(1.1) saturate(1.1);
 }
 
-.gr_grid_book_container::after, .vg_grid_game_container::after {
-  content: '';
+.gr_grid_book_container::after,
+.vg_grid_game_container::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(255, 221, 87, 0.1), rgba(255, 221, 87, 0.05));
+  background: linear-gradient(
+    45deg,
+    rgba(255, 221, 87, 0.1),
+    rgba(255, 221, 87, 0.05)
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: var(--border-radius);
   pointer-events: none;
 }
 
-.gr_grid_book_container:hover::after, .vg_grid_game_container:hover::after {
+.gr_grid_book_container:hover::after,
+.vg_grid_game_container:hover::after {
   opacity: 1;
 }
 
-.goodreads, .vgames {
+.goodreads,
+.vgames {
   display: block;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.goodreads h3, .vgames h3 {
+.goodreads h3,
+.vgames h3 {
   color: var(--text-primary);
   font-size: 1.3rem;
 }
@@ -1594,7 +1635,8 @@ section.fade-out {
   text-align: left;
 }
 
-.goodreads .gr_grid_container:has(p), .vgames .vg_grid_container:has(p) {
+.goodreads .gr_grid_container:has(p),
+.vgames .vg_grid_container:has(p) {
   display: block;
 }
 
@@ -1618,30 +1660,34 @@ section.fade-out {
 }
 
 @media (max-width: 768px) {
-  .gr_grid_container, .vg_grid_container {
+  .gr_grid_container,
+  .vg_grid_container {
     justify-content: center;
     gap: 6px;
   }
-  
-  .gr_grid_book_container, .vg_grid_game_container {
+
+  .gr_grid_book_container,
+  .vg_grid_game_container {
     transition: all 0.2s ease;
   }
-  
-  .gr_grid_book_container:hover, .vg_grid_game_container:hover {
+
+  .gr_grid_book_container:hover,
+  .vg_grid_game_container:hover {
     transform: translateY(-2px) scale(1.02);
   }
-  
-  .gr_grid_book_container img, .vg_grid_game_container img {
+
+  .gr_grid_book_container img,
+  .vg_grid_game_container img {
     width: 85px !important;
     height: 140px !important;
   }
-  
+
   .goodreads .gr_grid_container:has(p) .gr_grid_book_container,
   .vgames .vg_grid_container:has(p) .vg_grid_game_container {
     margin-right: 1rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .goodreads .gr_grid_container:has(p) .gr_grid_book_container img,
   .vgames .vg_grid_container:has(p) .vg_grid_game_container img {
     width: 75px !important;
@@ -1650,11 +1696,12 @@ section.fade-out {
 }
 
 @media (max-width: 480px) {
-  .gr_grid_book_container img, .vg_grid_game_container img {
+  .gr_grid_book_container img,
+  .vg_grid_game_container img {
     width: 75px !important;
     height: 120px !important;
   }
-  
+
   .goodreads .gr_grid_container:has(p) .gr_grid_book_container img,
   .vgames .vg_grid_container:has(p) .vg_grid_game_container img {
     width: 65px !important;

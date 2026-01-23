@@ -1570,7 +1570,7 @@ section.fade-out {
 
 .gr_grid_book_container img,
 .vg_grid_game_container img {
-  width: 98px !important;
+  width: 112px !important;
   height: 160px !important;
   border-radius: var(--border-radius);
   transition: all 0.3s ease;

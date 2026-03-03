@@ -544,6 +544,98 @@
         </section>
         <section>
           <div class="project-header">
+            <h2 class="project-title">Universal Editor</h2>
+            <div class="project-date">January 2026 - Current</div>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <img
+                name="Rust"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+              />
+            </div>
+            <div class="skill-item">
+              <img
+                name="Jira"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
+              />
+            </div>
+          </div>
+          <p class="project-meta">
+            <strong>GitHub:</strong>
+            <a
+              href="https://github.com/Evan-Pochtar/UniversalEditor"
+              target="_blank"
+              >View Repository</a
+            >
+          </p>
+          <p class="project-description">
+            Universal Editor is a native desktop application built with Rust,
+            designed to edit or convert text, images, and data files in a single
+            environment without the overhead of web-based frameworks like
+            Electron. It is built around a kernel and module architecture, where
+            a persistent shell manages GPU-accelerated rendering via egui and a
+            sidebar registry, while individual editors are plugged in as
+            discrete modules that share a common trait interface. This means
+            switching between editors happens instantly within the same window,
+            with no new process or reload. Current modules include a text editor
+            backed by a Rope data structure for constant-time edits anywhere in
+            a file regardless of size, a non-destructive image editor supporting
+            a wide range of formats, a dual-view JSON editor with both raw text
+            and collapsible tree modes, and a batch image converter. The styling
+            system is built around a shared color palette and theme engine with
+            light and dark mode support, keeping the interface consistent and
+            modern across every module despite being a fully native application.
+            Currently tested on Windows 11.
+          </p>
+          <button class="toggle-btn">View Screenshots</button>
+          <div class="screenshots">
+            <div class="screenshot-grid desktop-shots">
+              <a
+                href="#"
+                class="screenshot-link"
+                data-full="static/img/UniversalEditor/MainMenu.png"
+              >
+                <img
+                  src="static/img/UniversalEditor/MainMenu.png"
+                  alt="UniversalEditor screenshot 1"
+                />
+              </a>
+              <a
+                href="#"
+                class="screenshot-link"
+                data-full="static/img/UniversalEditor/ImageConverter.png"
+              >
+                <img
+                  src="static/img/UniversalEditor/ImageConverter.png"
+                  alt="UniversalEditor screenshot 2"
+                />
+              </a>
+              <a
+                href="#"
+                class="screenshot-link"
+                data-full="static/img/UniversalEditor/ImageEditor.png"
+              >
+                <img
+                  src="static/img/UniversalEditor/ImageEditor.png"
+                  alt="UniversalEditor screenshot 3"
+                />
+              </a>
+              <a
+                href="#"
+                class="screenshot-link"
+                data-full="static/img/UniversalEditor/TextEditor.png"
+              >
+                <img
+                  src="static/img/UniversalEditor/TextEditor.png"
+                  alt="UniversalEditor screenshot 4"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="project-header">
             <h2 class="project-title">AnomalyViz</h2>
             <div class="project-date">June 2025 - November 2025</div>
           </div>
@@ -760,97 +852,6 @@
             amount of data, and approaches to enhance predictive accuracy in
             imbalanced datasets.
           </p>
-        </section>
-        <section>
-          <div class="project-header">
-            <h2 class="project-title">Universal Editor</h2>
-            <div class="project-date">January 2026 - Current</div>
-          </div>
-          <div class="skills-list">
-            <div class="skill-item">
-              <img
-                name="Rust"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
-              />
-            </div>
-            <div class="skill-item">
-              <img
-                name="Jira"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
-              />
-            </div>
-          </div>
-          <p class="project-meta">
-            <strong>GitHub:</strong>
-            <a
-              href="https://github.com/Evan-Pochtar/UniversalEditor"
-              target="_blank"
-              >View Repository</a
-            >
-          </p>
-          <p class="project-description">
-            Universal Editor is an all-in-one native desktop application built
-            with Rust. The goal is to create a single environment where you can
-            handle text, images, video, and data files without the overhead of
-            web-based frameworks like Electron. It focuses on using
-            systems-level programming to stay fast and light, even when dealing
-            with files that are several gigabytes in size. This is extremely
-            early in production and only an idea/prototype at the moment. The
-            project is built around a "Kernel and Module" architecture. The main
-            shell handles the windowing, GPU rendering, and global styling,
-            while specific editors are plugged in as modules. By using egui, the
-            interface stays responsive because it's rendered directly on your
-            graphics card. For text (so far), it uses a Rope data structure,
-            which allows you to edit massive files by treating the text as a
-            tree of chunks rather than one giant block of memory. Currently, a
-            text editor module with Markdown support, as well as a prototype
-            image editor is available.
-          </p>
-          <button class="toggle-btn">View Screenshots</button>
-          <div class="screenshots">
-            <div class="screenshot-grid desktop-shots">
-              <a
-                href="#"
-                class="screenshot-link"
-                data-full="static/img/UniversalEditor/MainMenu.png"
-              >
-                <img
-                  src="static/img/UniversalEditor/MainMenu.png"
-                  alt="UniversalEditor screenshot 1"
-                />
-              </a>
-              <a
-                href="#"
-                class="screenshot-link"
-                data-full="static/img/UniversalEditor/ImageConverter.png"
-              >
-                <img
-                  src="static/img/UniversalEditor/ImageConverter.png"
-                  alt="UniversalEditor screenshot 2"
-                />
-              </a>
-              <a
-                href="#"
-                class="screenshot-link"
-                data-full="static/img/UniversalEditor/ImageEditor.png"
-              >
-                <img
-                  src="static/img/UniversalEditor/ImageEditor.png"
-                  alt="UniversalEditor screenshot 3"
-                />
-              </a>
-              <a
-                href="#"
-                class="screenshot-link"
-                data-full="static/img/UniversalEditor/TextEditor.png"
-              >
-                <img
-                  src="static/img/UniversalEditor/TextEditor.png"
-                  alt="UniversalEditor screenshot 4"
-                />
-              </a>
-            </div>
-          </div>
         </section>
         <section>
           <div class="project-header">
